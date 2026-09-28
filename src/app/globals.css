@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Le Phố Hub — Indochine Modern Color Palette
+   Primary  : Terracotta / Đỏ gạch
+   Secondary: Vàng đồng cổ / Antique gold
+   Neutral  : Kem ngà / Ivory-cream
+   Accent   : Xanh rêu / Deep forest green
+   ============================================================ */
+:root {
+  /* Primary — Terracotta scale */
+  --c-primary-50:  250, 238, 232;   /* #FAeee8 */
+  --c-primary-100: 244, 213, 200;   /* #F4D5C8 */
+  --c-primary-200: 232, 174, 152;   /* #E8AE98 */
+  --c-primary-300: 218, 132, 100;   /* #DA8464 */
+  --c-primary-400: 204, 98, 70;     /* #CC6246 */
+  --c-primary-500: 192, 82, 43;     /* #C0522B  ← brand terracotta */
+  --c-primary-600: 165, 67, 30;     /* #A5431E */
+  --c-primary-700: 135, 52, 20;     /* #873414 */
+  --c-primary-800: 104, 38, 12;     /* #68260C */
+  --c-primary-900: 74, 25, 6;       /* #4A1906 */
+
+  /* Secondary — Antique Gold scale */
+  --c-secondary-50:  253, 248, 228; /* #FDF8E4 */
+  --c-secondary-100: 248, 237, 188; /* #F8EDBC */
+  --c-secondary-200: 238, 212, 120; /* #EED478 */
+  --c-secondary-300: 220, 183, 72;  /* #DCB748 */
+  --c-secondary-400: 200, 158, 32;  /* #C89E20 */
+  --c-secondary-500: 184, 134, 11;  /* #B8860B  ← antique gold */
+  --c-secondary-600: 155, 110, 8;   /* #9B6E08 */
+  --c-secondary-700: 120, 84, 5;    /* #785405 */
+  --c-secondary-800: 86, 60, 3;     /* #563C03 */
+  --c-secondary-900: 54, 36, 1;     /* #362401 */
+
+  /* Neutral — Warm ivory/cream scale */
+  --c-neutral-50:  250, 246, 240;   /* #FAF6F0  ← brand background */
+  --c-neutral-100: 244, 237, 226;   /* #F4EDE2 */
+  --c-neutral-200: 228, 215, 196;   /* #E4D7C4 */
+  --c-neutral-300: 205, 183, 156;   /* #CDB79C */
+  --c-neutral-400: 175, 147, 116;   /* #AF9374 */
+  --c-neutral-500: 148, 116, 86;    /* #947456 */
+  --c-neutral-600: 120, 90, 62;     /* #785A3E */
+  --c-neutral-700: 94, 67, 43;      /* #5E432B */
+  --c-neutral-800: 60, 40, 22;      /* #3C2816 */
+  --c-neutral-900: 44, 24, 16;      /* #2C1810  ← brand dark brown text */
+
+  /* Accent — Deep forest green */
+  --c-accent-green: 45, 80, 22;     /* #2D5016 */
+}
+
+/* Dark-mode overrides — invert ivory/cream bg */
+.dark {
+  --c-neutral-50:  30, 22, 16;
+  --c-neutral-100: 44, 32, 22;
+  --c-neutral-900: 250, 246, 240;
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  @keyframes zalo-widget-ripple {
+    0% {
+      transform: scale(0.88);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1.55);
+      opacity: 0;
+    }
+  }
+
+  .animate-zalo-widget-ripple {
+    animation: zalo-widget-ripple 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes scroll-marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll-marquee {
+    display: flex;
+    width: max-content;
+    animation: scroll-marquee 25s linear infinite;
+  }
+}

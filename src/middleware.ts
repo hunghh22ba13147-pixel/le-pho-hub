@@ -1,0 +1,22 @@
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+
+export function middleware(request: NextRequest) {
+  const url = request.nextUrl.clone();
+  // Le Phố Hub — add custom middleware rules here as needed
+  return NextResponse.next();
+}
+
+export const config = {
+  matcher: [
+    /*
+     * Match all request paths except for:
+     * - api (API routes)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - favicon.png (favicon file)
+     */
+    '/((?!api|_next/static|_next/image|favicon.ico|favicon.png).*)',
+  ],
+};
