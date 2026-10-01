@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { FC, useEffect, useState } from "react";
 import { TaxonomyType } from "@/data/types";
@@ -28,7 +28,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
     href: "/phong-tro?district=dong-da",
-    name: "Quan Dong Da",
+    name: "Quận Đống Đa",
     taxonomy: "category",
     count: 45,
     thumbnail: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=800&q=80",
@@ -36,7 +36,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "2",
     href: "/phong-tro?district=cau-giay",
-    name: "Quan Cau Giay",
+    name: "Quận Cầu Giấy",
     taxonomy: "category",
     count: 62,
     thumbnail: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
@@ -44,7 +44,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "3",
     href: "/phong-tro?district=thanh-xuan",
-    name: "Quan Thanh Xuan",
+    name: "Quận Thanh Xuân",
     taxonomy: "category",
     count: 38,
     thumbnail: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&q=80",
@@ -52,7 +52,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "4",
     href: "/phong-tro?district=hai-ba-trung",
-    name: "Quan Hai Ba Trung",
+    name: "Quận Hai Bà Trưng",
     taxonomy: "category",
     count: 51,
     thumbnail: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80",
@@ -60,7 +60,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "5",
     href: "/phong-tro?district=ba-dinh",
-    name: "Quan Ba Dinh",
+    name: "Quận Ba Đình",
     taxonomy: "category",
     count: 29,
     thumbnail: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
@@ -68,7 +68,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "6",
     href: "/phong-tro?district=hoan-kiem",
-    name: "Quan Hoan Kiem",
+    name: "Quận Hoàn Kiếm",
     taxonomy: "category",
     count: 22,
     thumbnail: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
@@ -76,7 +76,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "7",
     href: "/phong-tro?district=nam-tu-liem",
-    name: "Quan Nam Tu Liem",
+    name: "Quận Nam Từ Liêm",
     taxonomy: "category",
     count: 57,
     thumbnail: "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&q=80",
@@ -84,7 +84,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "8",
     href: "/phong-tro?district=hoang-mai",
-    name: "Quan Hoang Mai",
+    name: "Quận Hoàng Mai",
     taxonomy: "category",
     count: 43,
     thumbnail: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80",

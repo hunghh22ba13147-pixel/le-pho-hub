@@ -14,29 +14,29 @@ export interface WidgetFooterMenu {
 const widgetMenus: WidgetFooterMenu[] = [
   {
     id: "5",
-    title: "He thong / Platform",
+    title: "Hệ thống / Platform",
     menus: [
-      { href: "/", label: "Trang chu / Home" },
-      { href: "/phong-tro-theo-quan", label: "Tim phong theo quan" },
-      { href: "/roommate", label: "Ghep o / Roommate" },
-      { href: "/wishlist", label: "Yeu thich / Wishlist" },
-      { href: "/blog", label: "Blog & Tin tuc" },
+      { href: "/", label: "Trang chủ / Home" },
+      { href: "/phong-tro-theo-quan", label: "Tìm phòng theo quận" },
+      { href: "/roommate", label: "Ghép ở / Roommate" },
+      { href: "/wishlist", label: "Yêu thích / Wishlist" },
+      { href: "/blog", label: "Blog & Tin tức" },
     ],
   },
   {
     id: "1",
-    title: "Thong tin / About",
+    title: "Thông tin / About",
     menus: [
-      { href: "/about", label: "Ve Le Pho Hub" },
-      { href: "/pricing", label: "Goi dich vu / Pricing" },
-      { href: "/contact", label: "Lien he / Contact" },
-      { href: "/term", label: "Dieu khoan su dung" },
-      { href: "/privacy", label: "Chinh sach bao mat" },
+      { href: "/about", label: "Về Le Phố Hub" },
+      { href: "/pricing", label: "Gói dịch vụ / Pricing" },
+      { href: "/contact", label: "Liên hệ / Contact" },
+      { href: "/term", label: "Điều khoản sử dụng" },
+      { href: "/privacy", label: "Chính sách bảo mật" },
     ],
   },
   {
     id: "2",
-    title: "Ket noi / Social",
+    title: "Kết nối / Social",
     menus: [
       { href: "#", label: "Facebook" },
       { href: "#", label: "Instagram" },
@@ -46,12 +46,12 @@ const widgetMenus: WidgetFooterMenu[] = [
   },
   {
     id: "4",
-    title: "Khu vuc / Districts",
+    title: "Khu vực / Districts",
     menus: [
-      { href: "/phong-tro-theo-quan/dong-da", label: "Dong Da" },
-      { href: "/phong-tro-theo-quan/cau-giay", label: "Cau Giay" },
-      { href: "/phong-tro-theo-quan/thanh-xuan", label: "Thanh Xuan" },
-      { href: "/phong-tro-theo-quan/hai-ba-trung", label: "Hai Ba Trung" },
+      { href: "/phong-tro-theo-quan/dong-da", label: "Đống Đa" },
+      { href: "/phong-tro-theo-quan/cau-giay", label: "Cầu Giấy" },
+      { href: "/phong-tro-theo-quan/thanh-xuan", label: "Thanh Xuân" },
+      { href: "/phong-tro-theo-quan/hai-ba-trung", label: "Hai Bà Trưng" },
     ],
   },
 ];
@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="container mt-8 pt-6 border-t border-neutral-100 dark:border-neutral-800">
           <p className="text-sm text-neutral-500 dark:text-neutral-400 text-center">
-            &copy; 2025 Le Pho Hub &mdash; Tim tro uy tin Ha Noi tai{" "}
+            &copy; 2025 Le Phố Hub &mdash; Tìm trọ uy tín Hà Nội tại{" "}
             <a href="https://lephohub.vn" className="text-primary-600 hover:underline font-medium">
               lephohub.vn
             </a>

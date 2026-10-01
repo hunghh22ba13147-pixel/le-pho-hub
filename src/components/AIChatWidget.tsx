@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
@@ -80,10 +80,10 @@ interface Message {
 }
 
 const QUICK_QUESTIONS = [
-  "Tim phong o Cau Giay",
-  "Gia phong Dong Da bao nhieu?",
-  "Ghep o la gi?",
-  "Xem goi dich vu",
+  "Tìm phòng ở Cầu Giấy",
+  "Giá phòng Đống Đa bao nhiêu?",
+  "Ghép ở là gì?",
+  "Xem gói dịch vụ",
 ];
 
 export default function AIChatWidget() {
@@ -92,7 +92,7 @@ export default function AIChatWidget() {
     {
       id: "welcome",
       role: "assistant",
-      content: "Xin chao! Minh la AI tu van cua Le Pho Hub 🏙️ Minh co the giup ban tim phong tro phu hop tai Ha Noi, tu van ghep o, goi dich vu. Ban can giup gi?",
+      content: "Xin chào! Mình là AI tư vấn của Le Phố Hub 🏠 Mình có thể giúp bạn tìm phòng trọ phù hợp tại Hà Nội, tư vấn ghép ở, gói dịch vụ. Bạn cần giúp gì?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -189,7 +189,7 @@ export default function AIChatWidget() {
             </div>
             <div className="flex-1">
               <p className="text-white font-bold text-sm">Le Pho Hub AI</p>
-              <p className="text-white/70 text-xs">Tu van tim phong & ghep o</p>
+              <p className="text-white/70 text-xs">Tư vấn tìm phòng & ghép ở</p>
             </div>
             <div className="flex items-center gap-1">
               <button onClick={clearHistory} title="Xoa lich su" className="p-1.5 rounded-lg hover:bg-white/20 transition-colors">
@@ -278,7 +278,7 @@ export default function AIChatWidget() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } }}
-                placeholder="Hoi ve phong tro, ghep o, gia ca..."
+                placeholder="Hỏi về phòng trọ, ghép ở, giá cả..."
                 disabled={isTyping}
                 className="flex-1 px-3 py-2.5 rounded-xl bg-neutral-100 dark:bg-neutral-700 text-neutral-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-400 disabled:opacity-50"
               />
@@ -287,7 +287,7 @@ export default function AIChatWidget() {
                 <PaperAirplaneIcon className="w-4 h-4" />
               </button>
             </div>
-            <p className="text-xs text-neutral-300 dark:text-neutral-500 text-center mt-2">AI co the mac loi. Vui long xac minh thong tin quan trong.</p>
+            <p className="text-xs text-neutral-300 dark:text-neutral-500 text-center mt-2">AI có thể mắc lỗi. Vui lòng xác minh thông tin quan trọng.</p>
           </div>
         </div>
       )}
