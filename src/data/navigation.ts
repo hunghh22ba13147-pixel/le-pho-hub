@@ -115,14 +115,14 @@ export const NAVIGATION_DEMO: NavItemType[] = [
   {
     id: "nav-roommate",
     href: "/roommate",
-    name: "Ghep o",
+    name: "Ghép ở",
     isNew: true,
     type: "dropdown",
     children: [
-      { id: "nav-roommate-home", href: "/roommate", name: "Gioi thieu Ghep o" },
-      { id: "nav-roommate-matches", href: "/roommate/matches", name: "Tim nguoi ghep o" },
-      { id: "nav-roommate-profile", href: "/roommate/profile", name: "Ho so cua toi" },
-      { id: "nav-ai", href: "/ai-assistant", name: "AI Tu van tim phong" },
+      { id: "nav-roommate-home", href: "/roommate", name: "Giới thiệu Ghép ở" },
+      { id: "nav-roommate-matches", href: "/roommate/matches", name: "Tìm người ghép ở" },
+      { id: "nav-roommate-profile", href: "/roommate/profile", name: "Hồ sơ của tôi" },
+      { id: "nav-ai", href: "/ai-assistant", name: "AI Tư vấn tìm phòng" },
     ],
   },
   {
@@ -133,13 +133,13 @@ export const NAVIGATION_DEMO: NavItemType[] = [
   {
     id: "nav-about",
     href: "/about",
-    name: "Ve Le Pho Hub",
+    name: "Về Le Phố Hub",
     type: "dropdown",
     children: [
-      { id: "nav-about-us", href: "/about", name: "Ve chung toi" },
-      { id: "nav-pricing", href: "/pricing", name: "Goi dich vu / Pricing" },
-      { id: "nav-blog", href: "/blog", name: "Blog & Tin tuc" },
-      { id: "nav-contact", href: "/contact", name: "Lien he / Contact" },
+      { id: "nav-about-us", href: "/about", name: "Về chúng tôi" },
+      { id: "nav-pricing", href: "/pricing", name: "Gói dịch vụ / Pricing" },
+      { id: "nav-blog", href: "/blog", name: "Blog & Tin tức" },
+      { id: "nav-contact", href: "/contact", name: "Liên hệ / Contact" },
     ],
   },
 ];

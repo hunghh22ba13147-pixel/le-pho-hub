@@ -31,10 +31,10 @@ const CustomHero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="hero-content pt-2 lg:pt-4 pb-6 lg:pb-8">
             <h1 className="hero-title text-4xl md:text-6xl font-extrabold text-neutral-900 dark:text-white leading-tight">
-              <span className="highlight text-primary-500">Le Pho Hub</span>
+              <span className="highlight text-primary-500">Le Phố Hub</span>
             </h1>
             <p className="hero-subtitle mt-6 text-neutral-600 dark:text-neutral-200 text-lg">
-              Tim phong tro chat luong, gia tot tai noi thanh Ha Noi — nhanh, minh bach va dang tin.
+              Tìm phòng trọ chất lượng, giá tốt tại nội thành Hà Nội — nhanh, minh bạch và đáng tin.
             </p>
           </div>
           <div className="search-container lg:pl-8">
@@ -48,7 +48,7 @@ const CustomHero = () => {
                   }`}
                   onClick={() => setActiveTab("all")}
                 >
-                  Tat ca
+                  Tất cả
                 </button>
                 <button
                   className={`tab px-4 py-2 rounded-full text-sm font-medium ${
@@ -58,7 +58,7 @@ const CustomHero = () => {
                   }`}
                   onClick={() => setActiveTab("room")}
                 >
-                  Nha tro / Phong tro
+                  Nhà trọ / Phòng trọ
                 </button>
               </div>
 
@@ -68,17 +68,17 @@ const CustomHero = () => {
                   onChange={(e) => setSelectedArea((e.target as HTMLSelectElement).value)}
                   className="w-full"
                 >
-                  <option value="">Chon quan / khu vuc</option>
-                  <option value="Dong Da">Dong Da</option>
-                  <option value="Ba Dinh">Ba Dinh</option>
-                  <option value="Hoan Kiem">Hoan Kiem</option>
-                  <option value="Hai Ba Trung">Hai Ba Trung</option>
-                  <option value="Cau Giay">Cau Giay</option>
-                  <option value="Thanh Xuan">Thanh Xuan</option>
-                  <option value="Nam Tu Liem">Nam Tu Liem</option>
-                  <option value="Bac Tu Liem">Bac Tu Liem</option>
-                  <option value="Long Bien">Long Bien</option>
-                  <option value="Hoang Mai">Hoang Mai</option>
+                  <option value="">Chọn quận / khu vực</option>
+                  <option value="Dong Da">Đống Đa</option>
+                  <option value="Ba Dinh">Ba Đình</option>
+                  <option value="Hoan Kiem">Hoàn Kiếm</option>
+                  <option value="Hai Ba Trung">Hai Bà Trưng</option>
+                  <option value="Cau Giay">Cầu Giấy</option>
+                  <option value="Thanh Xuan">Thanh Xuân</option>
+                  <option value="Nam Tu Liem">Nam Từ Liêm</option>
+                  <option value="Bac Tu Liem">Bắc Từ Liêm</option>
+                  <option value="Long Bien">Long Biên</option>
+                  <option value="Hoang Mai">Hoàng Mai</option>
                 </Select>
 
                 <div className="grid grid-cols-2 gap-3">
@@ -86,27 +86,27 @@ const CustomHero = () => {
                     value={priceRange}
                     onChange={(e) => setPriceRange((e.target as HTMLSelectElement).value)}
                   >
-                    <option value="">Muc gia</option>
-                    <option value="0-2">Duoi 2 tr/thang</option>
-                    <option value="2-3">2 - 3 tr/thang</option>
-                    <option value="3-4">3 - 4 tr/thang</option>
-                    <option value="4-6">4 - 6 tr/thang</option>
-                    <option value="6+">Tren 6 tr/thang</option>
+                    <option value="">Mức giá</option>
+                    <option value="0-2">Dưới 2 tr/tháng</option>
+                    <option value="2-3">2 - 3 tr/tháng</option>
+                    <option value="3-4">3 - 4 tr/tháng</option>
+                    <option value="4-6">4 - 6 tr/tháng</option>
+                    <option value="6+">Trên 6 tr/tháng</option>
                   </Select>
                   <Select
                     value={area}
                     onChange={(e) => setArea((e.target as HTMLSelectElement).value)}
                   >
-                    <option value="">Dien tich</option>
-                    <option value="0-20">Duoi 20m2</option>
-                    <option value="20-30">20 - 30m2</option>
-                    <option value="30-50">30 - 50m2</option>
-                    <option value="50+">Tren 50m2</option>
+                    <option value="">Diện tích</option>
+                    <option value="0-20">Dưới 20m²</option>
+                    <option value="20-30">20 - 30m²</option>
+                    <option value="30-50">30 - 50m²</option>
+                    <option value="50+">Trên 50m²</option>
                   </Select>
                 </div>
 
                 <ButtonPrimary className="w-full" onClick={handleSearch}>
-                  Tim kiem
+                  Tìm kiếm
                 </ButtonPrimary>
               </div>
             </div>

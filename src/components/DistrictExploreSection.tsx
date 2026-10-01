@@ -4,87 +4,87 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-// Danh sach quan noi thanh + vung ven Ha Noi
+// Danh sách quận nội thành + vùng ven Hà Nội
 const HANOI_DISTRICTS = [
   {
     id: "dong-da",
-    name: "Dong Da",
-    nameVi: "Dong Da",
-    description: "Trung tam van hoa, nhieu truong DH, gia phong hop ly",
+    name: "Đống Đa",
+    nameVi: "Đống Đa",
+    description: "Trung tâm văn hóa, nhiều trường ĐH, giá phòng hợp lý",
     slug: "dong-da",
     image: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=800&q=80",
     roomCount: 45,
-    type: "Noi thanh",
+    type: "Nội thành",
   },
   {
     id: "cau-giay",
-    name: "Cau Giay",
-    nameVi: "Cau Giay",
-    description: "Khu vuc sinh vien soi dong, gan DH Quoc Gia, DHBK",
+    name: "Cầu Giấy",
+    nameVi: "Cầu Giấy",
+    description: "Khu vực sinh viên sôi động, gần ĐH Quốc Gia, ĐHBK",
     slug: "cau-giay",
     image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
     roomCount: 62,
-    type: "Noi thanh",
+    type: "Nội thành",
   },
   {
     id: "thanh-xuan",
-    name: "Thanh Xuan",
-    nameVi: "Thanh Xuan",
-    description: "Nhieu van phong, khu dan cu hien dai, giao thong thuan tien",
+    name: "Thanh Xuân",
+    nameVi: "Thanh Xuân",
+    description: "Nhiều văn phòng, khu dân cư hiện đại, giao thông thuận tiện",
     slug: "thanh-xuan",
     image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&q=80",
     roomCount: 38,
-    type: "Vung ven",
+    type: "Vùng ven",
   },
   {
     id: "hai-ba-trung",
-    name: "Hai Ba Trung",
-    nameVi: "Hai Ba Trung",
-    description: "Khu pho cu, kien truc Phap thuoc, gan ho Hoan Kiem",
+    name: "Hai Bà Trưng",
+    nameVi: "Hai Bà Trưng",
+    description: "Khu phố cũ, kiến trúc Pháp thuộc, gần hồ Hoàn Kiếm",
     slug: "hai-ba-trung",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
     roomCount: 29,
-    type: "Noi thanh",
+    type: "Nội thành",
   },
   {
     id: "ba-dinh",
-    name: "Ba Dinh",
-    nameVi: "Ba Dinh",
-    description: "Trung tam chinh tri, pho co Ha Noi, nhieu di tich lich su",
+    name: "Ba Đình",
+    nameVi: "Ba Đình",
+    description: "Trung tâm chính trị, phố cổ Hà Nội, nhiều di tích lịch sử",
     slug: "ba-dinh",
     image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
     roomCount: 22,
-    type: "Noi thanh",
+    type: "Nội thành",
   },
   {
     id: "nam-tu-liem",
-    name: "Nam Tu Liem",
-    nameVi: "Nam Tu Liem",
-    description: "Khu do thi moi, nhieu chung cu mini, gia tot cho sinh vien",
+    name: "Nam Từ Liêm",
+    nameVi: "Nam Từ Liêm",
+    description: "Khu đô thị mới, nhiều chung cư mini, giá tốt cho sinh viên",
     slug: "nam-tu-liem",
     image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
     roomCount: 55,
-    type: "Vung ven",
+    type: "Vùng ven",
   },
   {
     id: "bac-tu-liem",
-    name: "Bac Tu Liem",
-    nameVi: "Bac Tu Liem",
-    description: "Gan cac khu cong nghiep, nhieu phong tro gia binh dan",
+    name: "Bắc Từ Liêm",
+    nameVi: "Bắc Từ Liêm",
+    description: "Gần các khu công nghiệp, nhiều phòng trọ giá bình dân",
     slug: "bac-tu-liem",
     image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
     roomCount: 41,
-    type: "Vung ven",
+    type: "Vùng ven",
   },
   {
     id: "long-bien",
-    name: "Long Bien",
-    nameVi: "Long Bien",
-    description: "Khu vuc moi phat trien, giao thong tot, phong rong rai",
+    name: "Long Biên",
+    nameVi: "Long Biên",
+    description: "Khu vực mới phát triển, giao thông tốt, phòng rộng rãi",
     slug: "long-bien",
     image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
     roomCount: 33,
-    type: "Vung ven",
+    type: "Vùng ven",
   },
 ];
 
@@ -101,19 +101,19 @@ const DistrictExploreSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-10">
           <span className="text-xs font-bold uppercase tracking-wider text-primary-600 bg-primary-50 dark:bg-primary-950/30 px-3 py-1.5 rounded-full">
-            Kham pha / Explore
+            Khám phá / Explore
           </span>
           <h2 className="text-3xl font-bold text-neutral-900 dark:text-white mt-4 mb-3">
-            Tim phong theo quan Ha Noi
+            Tìm phòng theo quận Hà Nội
           </h2>
           <p className="text-neutral-600 dark:text-neutral-300 max-w-xl mx-auto">
-            Kham pha cac khu vuc noi thanh va vung ven soi dong nhat — phu hop
-            voi moi ngan sach va phong cach song.
+            Khám phá các khu vực nội thành và vùng ven sôi động nhất — phù hợp
+            với mọi ngân sách và phong cách sống.
           </p>
         </div>
 
         <div className="flex justify-center gap-3 mb-10">
-          {["all", "Noi thanh", "Vung ven"].map((tab) => (
+          {["all", "Nội thành", "Vùng ven"].map((tab) => (
             <button
               key={tab}
               onClick={() => setFilter(tab)}
@@ -123,7 +123,7 @@ const DistrictExploreSection = () => {
                   : "bg-white dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 hover:bg-primary-50 dark:hover:bg-neutral-700 border border-neutral-200 dark:border-neutral-600"
               }`}
             >
-              {tab === "all" ? "Tat ca / All" : tab}
+              {tab === "all" ? "Tất cả / All" : tab}
             </button>
           ))}
         </div>
@@ -147,7 +147,7 @@ const DistrictExploreSection = () => {
                   <div className="absolute top-3 left-3">
                     <span
                       className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
-                        district.type === "Noi thanh"
+                        district.type === "Nội thành"
                           ? "bg-primary-500 text-white"
                           : "bg-secondary-500 text-white"
                       }`}
@@ -156,12 +156,12 @@ const DistrictExploreSection = () => {
                     </span>
                   </div>
                   <div className="absolute bottom-3 right-3 bg-white/90 dark:bg-neutral-800/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-neutral-900 dark:text-white">
-                    {district.roomCount} phong
+                    {district.roomCount} phòng
                   </div>
                 </div>
                 <div className="p-5">
                   <h3 className="font-bold text-lg text-neutral-900 dark:text-white mb-1 group-hover:text-primary-500 transition-colors">
-                    Quan {district.nameVi}
+                    Quận {district.nameVi}
                   </h3>
                   <p className="text-xs text-neutral-500 dark:text-neutral-400 line-clamp-2 mb-3">
                     {district.description}
@@ -185,8 +185,8 @@ const DistrictExploreSection = () => {
             href="/phong-tro-theo-quan"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors shadow-md"
           >
-            Xem tat ca quan / View All Districts
-            <span>rarr;</span>
+            Xem tất cả quận / View All Districts
+            <span>→</span>
           </Link>
         </div>
       </div>

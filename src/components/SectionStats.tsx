@@ -8,10 +8,10 @@ export interface SectionStatsProps {
 }
 
 const STATS_DATA = [
-  { id: 1, value: "200+", label: "Phong tro", subLabel: "dang co san tai Ha Noi" },
-  { id: 2, value: "500+", label: "Nguoi ghep o", subLabel: "da tim duoc ban cung phong" },
-  { id: 3, value: "80+", label: "Chu tro", subLabel: "da tin tuong Le Pho Hub" },
-  { id: 4, value: "8", label: "Quan noi thanh", subLabel: "Ha Noi duoc ho tro" },
+  { id: 1, value: "200+", label: "Phòng trọ", subLabel: "đang có sẵn tại Hà Nội" },
+  { id: 2, value: "500+", label: "Người ghép ở", subLabel: "đã tìm được bạn cùng phòng" },
+  { id: 3, value: "80+", label: "Chủ trọ", subLabel: "đã tin tưởng Le Phố Hub" },
+  { id: 4, value: "8", label: "Quận nội thành", subLabel: "Hà Nội được hỗ trợ" },
 ];
 
 const SectionStats: FC<SectionStatsProps> = ({ className = "" }) => {
@@ -42,13 +42,13 @@ const SectionStats: FC<SectionStatsProps> = ({ className = "" }) => {
               href="/phong-tro"
               className="px-5 py-2.5 bg-white text-primary-700 hover:bg-primary-50 rounded-full text-sm font-semibold transition-colors"
             >
-              Tim phong ngay
+              Tìm phòng ngay
             </Link>
             <Link
               href="/roommate"
               className="px-5 py-2.5 border border-white/30 text-white hover:bg-white/10 rounded-full text-sm font-semibold transition-colors"
             >
-              Tim nguoi ghep o
+              Tìm người ghép ở
             </Link>
           </div>
         </div>
