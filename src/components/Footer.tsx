@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="container mt-8 pt-6 border-t border-neutral-100 dark:border-neutral-800">
           <p className="text-sm text-neutral-500 dark:text-neutral-400 text-center">
-            &copy; 2025 Le Phố Hub &mdash; Tìm trọ uy tín Hà Nội tại{" "}
+            &copy; 2026 Le Phố Hub &mdash; Tìm trọ uy tín Hà Nội tại{" "}
             <a href="https://lephohub.vn" className="text-primary-600 hover:underline font-medium">
               lephohub.vn
             </a>

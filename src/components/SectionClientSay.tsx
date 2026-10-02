@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Heading from "@/shared/Heading";
 import React, { FC, useState } from "react";
@@ -17,24 +17,24 @@ export interface SectionClientSayProps {
 const DEMO_DATA = [
   {
     id: 1,
-    clientName: "Nguyen Minh Tuan",
-    clientAddress: "Phong tro Dong Da, Ha Noi",
+    clientName: "Nguyễn Minh Tuân",
+    clientAddress: "Phòng trọ Đống Đa, Hà Nội",
     content:
-      "Le Pho Hub giup minh tim duoc phong ung y o Dong Da chi trong 2 ngay. Thong tin ro rang, anh that 100%, chu nha de tinh. Rat hai long!",
+      "Le Phố Hub giúp mình tìm được phòng ưng ý ở Đống Đa chỉ trong 2 ngày. Thông tin rõ ràng, ảnh thật 100%, chủ nhà dễ tính. Rất hài lòng!",
   },
   {
     id: 2,
-    clientName: "Tran Thi Huong",
-    clientAddress: "Chung cu mini Cau Giay, Ha Noi",
+    clientName: "Trần Thị Hương",
+    clientAddress: "Chung cư mini Cầu Giấy, Hà Nội",
     content:
-      "Minh la sinh vien nam 3 DHQG, tim phong gan truong qua Le Pho Hub. Loc theo quan rat tien, tim duoc phong 3 trieu/thang trong vong 1 tuan!",
+      "Mình là sinh viên năm 3 ĐHQG, tìm phòng gần trường qua Le Phố Hub. Lọc theo quận rất tiện, tìm được phòng 3 triệu/tháng trong vòng 1 tuần!",
   },
   {
     id: 3,
-    clientName: "Le Van Duc",
-    clientAddress: "Phong tro Thanh Xuan, Ha Noi",
+    clientName: "Lê Văn Đức",
+    clientAddress: "Phòng trọ Thanh Xuân, Hà Nội",
     content:
-      "Tinh nang ghep o cua Le Pho Hub that su hay. Minh tim duoc nguoi ban cung phong hop nhau qua Match Score, tiet kiem duoc gan 2 trieu/thang!",
+      "Tính năng ghép ở của Le Phố Hub thật sự hay. Mình tìm được người bạn cùng phòng hợp nhau qua Match Score, tiết kiệm được gần 2 triệu/tháng!",
   },
 ];
 
@@ -81,17 +81,17 @@ const SectionClientSay: FC<SectionClientSayProps> = ({
 
   return (
     <div className={`nc-SectionClientSay relative ${className} `}>
-      <Heading desc="Khach hang noi gi ve Le Pho Hub" isCenter>
+      <Heading desc="Khách hàng nói gì về Le Phố Hub" isCenter>
         Khách hàng nói gì về Le Phố Hub
       </Heading>
       <div className="relative md:mb-16 max-w-2xl mx-auto">
         {renderIllustration()}
         <div className={`mt-12 lg:mt-16 relative `}>
           <span className="text-4xl text-primary-6000/40 absolute -mr-10 lg:mr-3 right-full top-1">
-            “
+            "
           </span>
           <span className="text-4xl text-primary-6000/40 absolute -ml-10 lg:ml-3 left-full top-1">
-            ”
+            "
           </span>
 
           <MotionConfig
