@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
@@ -16,47 +16,47 @@ import { SparklesIcon as SparklesSolid } from "@heroicons/react/24/solid";
 
 const MOCK_RULES: { pattern: RegExp; answer: string; listings?: { id: string; title: string; price: string; district: string }[] }[] = [
   {
-    pattern: /dong da|dong-da/i,
-    answer: "Quan Dong Da co rat nhieu phong tro gan cac truong DH lon. Gia trung binh 2.5-4 trieu/thang. Khu vuc Xa Dan, Cat Linh, Kim Lien la nhung noi duoc sinh vien ua thich nhat.",
+    pattern: /dong da|dong-da|đống đa/i,
+    answer: "Quận Đống Đa có rất nhiều phòng trọ gần các trường ĐH lớn. Giá trung bình 2.5–4 triệu/tháng. Khu vực Xã Đàn, Cát Linh, Kim Liên là những nơi được sinh viên ưa thích nhất.",
     listings: [
-      { id: "1", title: "Phong tro Xa Dan dep, yen tinh", price: "3,200,000d/thang", district: "Dong Da" },
-      { id: "2", title: "Chung cu mini Cat Linh, day du tien nghi", price: "4,500,000d/thang", district: "Dong Da" },
+      { id: "1", title: "Phòng trọ Xã Đàn đẹp, yên tĩnh", price: "3.200.000đ/tháng", district: "Đống Đa" },
+      { id: "2", title: "Chung cư mini Cát Linh, đầy đủ tiện nghi", price: "4.500.000đ/tháng", district: "Đống Đa" },
     ],
   },
   {
-    pattern: /cau giay|cau-giay/i,
-    answer: "Cau Giay la thien duong sinh vien voi mat do DH cao nhat Ha Noi (Bach Khoa, Quoc Gia, Su Pham...). Gia phong 2-5 trieu/thang. Khu Dich Vong, Mai Dich co nhieu phong gia tot.",
+    pattern: /cau giay|cau-giay|cầu giấy/i,
+    answer: "Cầu Giấy là thiên đường sinh viên với mật độ ĐH cao nhất Hà Nội (Bách Khoa, Quốc Gia, Sư Phạm...). Giá phòng 2–5 triệu/tháng. Khu Dịch Vọng, Mai Dịch có nhiều phòng giá tốt.",
     listings: [
-      { id: "3", title: "Phong Dich Vong gan DHBK, co bep", price: "2,800,000d/thang", district: "Cau Giay" },
-      { id: "4", title: "Studio Mai Dich view dep, full NT", price: "5,000,000d/thang", district: "Cau Giay" },
+      { id: "3", title: "Phòng Dịch Vọng gần ĐHBK, có bếp", price: "2.800.000đ/tháng", district: "Cầu Giấy" },
+      { id: "4", title: "Studio Mai Dịch view đẹp, full nội thất", price: "5.000.000đ/tháng", district: "Cầu Giấy" },
     ],
   },
   {
-    pattern: /thanh xuan/i,
-    answer: "Thanh Xuan la khu vuc van phong va di lam ly tuong, phat trien manh ve chung cu mini. Gia 3-6 trieu/thang. Nhieu toa nha moi co thang may, bao ve 24/7.",
+    pattern: /thanh xuan|thanh xuân/i,
+    answer: "Thanh Xuân là khu vực văn phòng và đi làm lý tưởng, phát triển mạnh về chung cư mini. Giá 3–6 triệu/tháng. Nhiều tòa nhà mới có thang máy, bảo vệ 24/7.",
     listings: [
-      { id: "5", title: "Chung cu mini Nguyen Trai, thoang mat", price: "3,800,000d/thang", district: "Thanh Xuan" },
+      { id: "5", title: "Chung cư mini Nguyễn Trãi, thoáng mát", price: "3.800.000đ/tháng", district: "Thanh Xuân" },
     ],
   },
   {
-    pattern: /gia|bao nhieu|chi phi/i,
-    answer: "Gia phong tro noi thanh Ha Noi theo khu vuc:\n- Hoan Kiem / Ba Dinh: 4-8 trieu/thang\n- Dong Da / Hai Ba Trung: 2.5-5 trieu/thang\n- Cau Giay / Thanh Xuan: 2.5-6 trieu/thang\n- Nam/Bac Tu Liem: 2-4 trieu/thang\n\nDien tich 15-30m2, da bao gom dien nuoc co ban.",
+    pattern: /gia|bao nhieu|chi phi|giá|bao nhiêu|chi phí/i,
+    answer: "Giá phòng trọ nội thành Hà Nội theo khu vực:\n- Hoàn Kiếm / Ba Đình: 4–8 triệu/tháng\n- Đống Đa / Hai Bà Trưng: 2.5–5 triệu/tháng\n- Cầu Giấy / Thanh Xuân: 2.5–6 triệu/tháng\n- Nam/Bắc Từ Liêm: 2–4 triệu/tháng\n\nDiện tích 15–30m², đã bao gồm điện nước cơ bản.",
   },
   {
-    pattern: /ghep o|roommate|ban cung phong/i,
-    answer: "Le Pho Hub co tinh nang Roommate Matching thong minh! Ban co the:\n1. Tao ho so ghep o tai /roommate/profile\n2. Xem danh sach nguoi phu hop tai /roommate/matches\n3. Nhan tin truc tiep voi nguoi phu hop\n\nHe thong match dua tren: lich ngu, ngan sach, so thich, tinh cach. Match Score tu 60-98%.",
+    pattern: /ghep o|roommate|ban cung phong|ghép ở|bạn cùng phòng/i,
+    answer: "Le Phố Hub có tính năng Roommate Matching thông minh! Bạn có thể:\n1. Tạo hồ sơ ghép ở tại /roommate/profile\n2. Xem danh sách người phù hợp tại /roommate/matches\n3. Nhắn tin trực tiếp với người phù hợp\n\nHệ thống match dựa trên: lịch ngủ, ngân sách, sở thích, tính cách. Match Score từ 60–98%.",
   },
   {
-    pattern: /pricing|goi|dich vu|tra phi|subscription/i,
-    answer: "Le Pho Hub co 3 goi cho chu tro:\n- Mien Phi: toi da 3 phong, tinh nang co ban\n- Chu Tro Pro (299k/thang): toi da 20 phong, hoa don tu dong, ghi dien nuoc\n- Doanh Nghiep (799k/thang): khong gioi han, CTV & hoa hong\n\nXem chi tiet tai /pricing. Goi Pro co 14 ngay dung thu mien phi!",
+    pattern: /pricing|goi|dich vu|tra phi|subscription|gói|dịch vụ/i,
+    answer: "Le Phố Hub có 3 gói cho chủ trọ:\n- Miễn Phí: tối đa 3 phòng, tính năng cơ bản\n- Chủ Trọ Pro (299k/tháng): tối đa 20 phòng, hóa đơn tự động, ghi điện nước\n- Doanh Nghiệp (799k/tháng): không giới hạn, CTV & hoa hồng\n\nXem chi tiết tại /pricing. Gói Pro có 14 ngày dùng thử miễn phí!",
   },
   {
-    pattern: /lien he|contact|ho tro|support/i,
-    answer: "Ban co the lien he Le Pho Hub qua:\n- Trang web: /contact\n- Email: hello@lephohub.vn\n- Zalo OA\n- Facebook Page\n\nThoi gian ho tro: 8h-22h tat ca cac ngay trong tuan.",
+    pattern: /lien he|contact|ho tro|support|liên hệ|hỗ trợ/i,
+    answer: "Bạn có thể liên hệ Le Phố Hub qua:\n- Trang web: /contact\n- Email: hello@lephohub.vn\n- Zalo OA\n- Facebook Page\n\nThời gian hỗ trợ: 8h–22h tất cả các ngày trong tuần.",
   },
   {
-    pattern: /noi thanh|ha noi|quan/i,
-    answer: "Le Pho Hub phuc vu cac quan noi thanh Ha Noi:\n\nNoi thanh: Hoan Kiem, Dong Da, Ba Dinh, Hai Ba Trung, Tay Ho\nVung ven: Cau Giay, Thanh Xuan, Nam Tu Liem, Bac Tu Liem, Hoang Mai, Long Bien\n\nBan muon tim phong o quan nao? Minh se giup ban tim phong phu hop!",
+    pattern: /noi thanh|ha noi|quan|nội thành|hà nội|quận/i,
+    answer: "Le Phố Hub phục vụ các quận nội thành Hà Nội:\n\nNội thành: Hoàn Kiếm, Đống Đa, Ba Đình, Hai Bà Trưng, Tây Hồ\nVùng ven: Cầu Giấy, Thanh Xuân, Nam Từ Liêm, Bắc Từ Liêm, Hoàng Mai, Long Biên\n\nBạn muốn tìm phòng ở quận nào? Mình sẽ giúp bạn tìm phòng phù hợp!",
   },
 ];
 
@@ -64,7 +64,7 @@ function getSmartAnswer(q: string) {
   for (const r of MOCK_RULES) {
     if (r.pattern.test(q)) return { answer: r.answer, listings: r.listings };
   }
-  return { answer: "Xin loi, minh chua co thong tin ve van de nay. Ban co the thu hoi ve: tim phong theo quan, gia ca, ghep o, goi dich vu, hoac lien he ho tro." };
+  return { answer: "Xin lỗi, mình chưa có thông tin về vấn đề này. Bạn có thể thử hỏi về: tìm phòng theo quận, giá cả, ghép ở, gói dịch vụ, hoặc liên hệ hỗ trợ." };
 }
 
 interface Message {
@@ -76,11 +76,11 @@ interface Message {
 }
 
 const CATEGORIES = [
-  { icon: MapPinIcon, label: "Tim phong theo quan", q: "Tim phong o Ha Noi theo quan noi thanh" },
-  { icon: CurrencyDollarIcon, label: "Gia ca & Chi phi", q: "Gia phong tro noi thanh Ha Noi bao nhieu?" },
-  { icon: UserGroupIcon, label: "Ghep o / Roommate", q: "Tinh nang ghep o la gi va lam the nao?" },
-  { icon: HomeModernIcon, label: "Goi dich vu chu tro", q: "Cac goi dich vu cho chu tro la gi?" },
-  { icon: QuestionMarkCircleIcon, label: "Lien he ho tro", q: "Lam the nao de lien he Le Pho Hub?" },
+  { icon: MapPinIcon, label: "Tìm phòng theo quận", q: "Tìm phòng ở Hà Nội theo quận nội thành" },
+  { icon: CurrencyDollarIcon, label: "Giá cả & Chi phí", q: "Giá phòng trọ nội thành Hà Nội bao nhiêu?" },
+  { icon: UserGroupIcon, label: "Ghép ở / Roommate", q: "Tính năng ghép ở là gì và làm thế nào?" },
+  { icon: HomeModernIcon, label: "Gói dịch vụ chủ trọ", q: "Các gói dịch vụ cho chủ trọ là gì?" },
+  { icon: QuestionMarkCircleIcon, label: "Liên hệ hỗ trợ", q: "Làm thế nào để liên hệ Le Phố Hub?" },
 ];
 
 export default function AIAssistantPage() {
@@ -88,7 +88,7 @@ export default function AIAssistantPage() {
     {
       id: "welcome",
       role: "assistant",
-      content: "Xin chao! Minh la AI tu van cua Le Pho Hub 🏙️\n\nMinh co the giup ban:\n- Tim phong tro phu hop tai Ha Noi\n- Tu van gia ca theo tung quan\n- Huong dan tinh nang Ghep o / Roommate Matching\n- Thong tin goi dich vu cho chu tro\n\nBan can giup gi hom nay?",
+      content: "Xin chào! Mình là AI tư vấn của Le Phố Hub 🏠\n\nMình có thể giúp bạn:\n- Tìm phòng trọ phù hợp tại Hà Nội\n- Tư vấn giá cả theo từng quận\n- Hướng dẫn tính năng Ghép ở / Roommate Matching\n- Thông tin gói dịch vụ cho chủ trọ\n\nBạn cần giúp gì hôm nay?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -128,7 +128,7 @@ export default function AIAssistantPage() {
       });
       if (!res.ok) throw new Error("api_error");
       const data = await res.json();
-      setMessages((prev) => prev.map((m) => m.id === loadingMsg.id ? { ...m, content: data.answer || "Khong co ket qua.", loading: false } : m));
+      setMessages((prev) => prev.map((m) => m.id === loadingMsg.id ? { ...m, content: data.answer || "Không có kết quả.", loading: false } : m));
     } catch {
       setUseMock(true);
       const { answer, listings } = getSmartAnswer(q);
@@ -138,7 +138,7 @@ export default function AIAssistantPage() {
     }
   }, [input, isTyping, useMock]);
 
-  const clearChat = () => setMessages([{ id: "w2", role: "assistant", content: "Da xoa lich su. Minh co the giup gi cho ban?" }]);
+  const clearChat = () => setMessages([{ id: "w2", role: "assistant", content: "Đã xóa lịch sử. Mình có thể giúp gì cho bạn?" }]);
 
   const isFirstMessage = messages.length <= 1;
 
@@ -152,14 +152,14 @@ export default function AIAssistantPage() {
               <SparklesSolid className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h1 className="font-black text-neutral-900 dark:text-white text-lg">Le Pho Hub AI</h1>
-              <p className="text-xs text-neutral-400">Tu van tim phong & ghep o tai Ha Noi</p>
+              <h1 className="font-black text-neutral-900 dark:text-white text-lg">Le Phố Hub AI</h1>
+              <p className="text-xs text-neutral-400">Tư vấn tìm phòng & ghép ở tại Hà Nội</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
             <button onClick={clearChat} className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm text-neutral-500 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors">
               <TrashIcon className="w-4 h-4" />
-              <span className="hidden sm:inline">Xoa lich su</span>
+              <span className="hidden sm:inline">Xóa lịch sử</span>
             </button>
           </div>
         </div>
@@ -176,8 +176,8 @@ export default function AIAssistantPage() {
               return (
                 <button key={cat.label} onClick={() => send(cat.q)}
                   className="flex items-center gap-3 p-4 bg-white dark:bg-neutral-800 rounded-2xl border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 hover:shadow-md transition-all text-left group">
-                  <div className="w-10 h-10 bg-primary-50 dark:bg-primary-950/30 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/40 transition-colors">
-                    <Icon className="w-5 h-5 text-primary-600 dark:text-primary-400" />
+                  <div className="w-10 h-10 bg-primary-500 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-600 transition-colors">
+                    <Icon className="w-5 h-5 text-white" />
                   </div>
                   <span className="text-sm font-medium text-neutral-700 dark:text-neutral-300">{cat.label}</span>
                 </button>
@@ -226,7 +226,7 @@ export default function AIAssistantPage() {
                         </Link>
                       ))}
                       <Link href="/phong-tro" className="col-span-full text-center text-xs text-primary-600 dark:text-primary-400 hover:underline py-1">
-                        Xem tat ca phong tro tai Ha Noi →
+                        Xem tất cả phòng trọ tại Hà Nội →
                       </Link>
                     </div>
                   )}
@@ -255,7 +255,7 @@ export default function AIAssistantPage() {
                 onKeyDown={(e) => {
                   if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); }
                 }}
-                placeholder="Hoi ve tim phong, ghep o, gia ca tai Ha Noi..."
+                placeholder="Hỏi về tìm phòng, ghép ở, giá cả tại Hà Nội..."
                 disabled={isTyping}
                 className="w-full px-4 py-3 rounded-2xl bg-neutral-100 dark:bg-neutral-700 text-neutral-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-400 resize-none disabled:opacity-50 min-h-[48px] max-h-[120px]"
               />
@@ -266,8 +266,8 @@ export default function AIAssistantPage() {
             </button>
           </div>
           <p className="text-xs text-neutral-400 text-center mt-2">
-            AI co the mac loi — xac minh thong tin quan trong truoc khi quyet dinh.
-            {" "}<Link href="/phong-tro" className="text-primary-500 hover:underline">Tim phong truc tiep →</Link>
+            AI có thể mắc lỗi — xác minh thông tin quan trọng trước khi quyết định.
+            {" "}<Link href="/phong-tro" className="text-primary-500 hover:underline">Tìm phòng trực tiếp →</Link>
           </p>
         </div>
       </div>
