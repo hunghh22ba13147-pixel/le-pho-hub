@@ -9,75 +9,75 @@ import { HeartIcon as HeartSolid } from "@heroicons/react/24/solid";
 // ---- MOCK DATA ----
 const MOCK_PROFILES = [
   {
-    id: "rm-001", name: "Nguyen Thi Lan", age: 22, gender: "female",
+    id: "rm-001", name: "Nguyễn Thị Lan", age: 22, gender: "female",
     avatar: "https://i.pravatar.cc/150?img=5",
-    occupation: "Sinh vien", university: "DH Bach Khoa Ha Noi",
-    district: "Cau Giay", budgetMin: 2500000, budgetMax: 4000000,
-    sleepSchedule: "Ngu som (truoc 11h)", cookingHabit: "Thuong xuyen nau",
-    smoking: false, pets: false, personality: "Huong noi",
-    bio: "Minh la sinh vien nam 3 BK, thich yeu tinh, hop voi nguoi ngu som va don gian.",
-    interests: ["Doc sach", "Yoga", "Nau an", "Phim Han"],
-    matchScore: 94, commonInterests: ["Nau an", "Phim Han"],
+    occupation: "Sinh viên", university: "ĐH Bách Khoa Hà Nội",
+    district: "Cầu Giấy", budgetMin: 2500000, budgetMax: 4000000,
+    sleepSchedule: "Ngủ sớm (trước 11h)", cookingHabit: "Thường xuyên nấu",
+    smoking: false, pets: false, personality: "Hướng nội",
+    bio: "Mình là sinh viên năm 3 BK, thích yêu tĩnh, hợp với người ngủ sớm và đơn giản.",
+    interests: ["Đọc sách", "Yoga", "Nấu ăn", "Phim Hàn"],
+    matchScore: 94, commonInterests: ["Nấu ăn", "Phim Hàn"],
     moveInDate: "2026-10-01", status: "pending",
   },
   {
-    id: "rm-002", name: "Tran Van Minh", age: 25, gender: "male",
+    id: "rm-002", name: "Trần Văn Minh", age: 25, gender: "male",
     avatar: "https://i.pravatar.cc/150?img=12",
-    occupation: "Di lam", workplace: "Cau Giay Tech Hub",
-    district: "Cau Giay", budgetMin: 3000000, budgetMax: 5000000,
-    sleepSchedule: "Linh hoat", cookingHabit: "Doi khi nau",
-    smoking: false, pets: false, personality: "Huong ngoai",
-    bio: "Fresher dev, thich an uong, them nguoi di gym buoi sang cung.",
-    interests: ["The thao", "Cong nghe", "Game", "Du lich"],
-    matchScore: 87, commonInterests: ["The thao", "Du lich"],
+    occupation: "Đi làm", workplace: "Cầu Giấy Tech Hub",
+    district: "Cầu Giấy", budgetMin: 3000000, budgetMax: 5000000,
+    sleepSchedule: "Linh hoạt", cookingHabit: "Đôi khi nấu",
+    smoking: false, pets: false, personality: "Hướng ngoại",
+    bio: "Fresher dev, thích ăn uống, tìm người đi gym buổi sáng cùng.",
+    interests: ["Thể thao", "Công nghệ", "Game", "Du lịch"],
+    matchScore: 87, commonInterests: ["Thể thao", "Du lịch"],
     moveInDate: "2026-10-15", status: "pending",
   },
   {
-    id: "rm-003", name: "Pham Thi Hoa", age: 23, gender: "female",
+    id: "rm-003", name: "Phạm Thị Hoa", age: 23, gender: "female",
     avatar: "https://i.pravatar.cc/150?img=9",
-    occupation: "Sinh vien", university: "DH Kinh Te Quoc Dan",
-    district: "Hai Ba Trung", budgetMin: 2000000, budgetMax: 3500000,
-    sleepSchedule: "Ngu muon (sau 12h)", cookingHabit: "Khong nau",
-    smoking: false, pets: true, personality: "Trung tinh",
-    bio: "Nuoi meo nho, rat sach se. Thich nghe nhac va lam viec trong im lang.",
-    interests: ["Nhac song", "Nuoi thu cung", "Art", "Cafe"],
+    occupation: "Sinh viên", university: "ĐH Kinh Tế Quốc Dân",
+    district: "Hai Bà Trưng", budgetMin: 2000000, budgetMax: 3500000,
+    sleepSchedule: "Ngủ muộn (sau 12h)", cookingHabit: "Không nấu",
+    smoking: false, pets: true, personality: "Trung tính",
+    bio: "Nuôi mèo nhỏ, rất sạch sẽ. Thích nghe nhạc và làm việc trong im lặng.",
+    interests: ["Nhạc sống", "Nuôi thú cưng", "Art", "Cafe"],
     matchScore: 78, commonInterests: ["Cafe"],
     moveInDate: "2026-11-01", status: "pending",
   },
   {
-    id: "rm-004", name: "Le Duc Anh", age: 26, gender: "male",
+    id: "rm-004", name: "Lê Đức Anh", age: 26, gender: "male",
     avatar: "https://i.pravatar.cc/150?img=15",
     occupation: "Freelance", workplace: "Remote",
-    district: "Dong Da", budgetMin: 3500000, budgetMax: 6000000,
-    sleepSchedule: "Ngu muon (sau 12h)", cookingHabit: "Doi khi nau",
-    smoking: false, pets: false, personality: "Huong ngoai",
-    bio: "Freelancer thiet ke, lich lam viec linh hoat. Thich chup anh cuoi tuan.",
-    interests: ["Nhiet anh", "Thiet ke", "Cafe", "Du lich"],
-    matchScore: 82, commonInterests: ["Cafe", "Du lich"],
+    district: "Đống Đa", budgetMin: 3500000, budgetMax: 6000000,
+    sleepSchedule: "Ngủ muộn (sau 12h)", cookingHabit: "Đôi khi nấu",
+    smoking: false, pets: false, personality: "Hướng ngoại",
+    bio: "Freelancer thiết kế, lịch làm việc linh hoạt. Thích chụp ảnh cuối tuần.",
+    interests: ["Nhiệt ảnh", "Thiết kế", "Cafe", "Du lịch"],
+    matchScore: 82, commonInterests: ["Cafe", "Du lịch"],
     moveInDate: "2026-10-01", status: "accepted",
   },
   {
-    id: "rm-005", name: "Vo Thi Mai", age: 21, gender: "female",
+    id: "rm-005", name: "Võ Thị Mai", age: 21, gender: "female",
     avatar: "https://i.pravatar.cc/150?img=25",
-    occupation: "Sinh vien", university: "DH Ngoai Thuong",
-    district: "Cau Giay", budgetMin: 2000000, budgetMax: 3000000,
-    sleepSchedule: "Ngu som (truoc 11h)", cookingHabit: "Thuong xuyen nau",
-    smoking: false, pets: false, personality: "Huong noi",
-    bio: "Sinh vien nam 2 FTU. Thich sach va nau an. Tim ban neu phong tiet kiem.",
-    interests: ["Doc sach", "Nau an", "Chay bo", "Tai chinh"],
-    matchScore: 91, commonInterests: ["Doc sach", "Nau an", "Chay bo"],
+    occupation: "Sinh viên", university: "ĐH Ngoại Thương",
+    district: "Cầu Giấy", budgetMin: 2000000, budgetMax: 3000000,
+    sleepSchedule: "Ngủ sớm (trước 11h)", cookingHabit: "Thường xuyên nấu",
+    smoking: false, pets: false, personality: "Hướng nội",
+    bio: "Sinh viên năm 2 FTU. Thích sách và nấu ăn. Tìm bạn nếu phòng tiết kiệm.",
+    interests: ["Đọc sách", "Nấu ăn", "Chạy bộ", "Tài chính"],
+    matchScore: 91, commonInterests: ["Đọc sách", "Nấu ăn", "Chạy bộ"],
     moveInDate: "2026-10-01", status: "pending",
   },
   {
-    id: "rm-006", name: "Nguyen Quoc Bao", age: 24, gender: "male",
+    id: "rm-006", name: "Nguyễn Quốc Bảo", age: 24, gender: "male",
     avatar: "https://i.pravatar.cc/150?img=18",
-    occupation: "Di lam", workplace: "Thanh Xuan Office",
-    district: "Thanh Xuan", budgetMin: 3000000, budgetMax: 5500000,
-    sleepSchedule: "Linh hoat", cookingHabit: "Doi khi nau",
-    smoking: false, pets: false, personality: "Trung tinh",
-    bio: "Marketing executive, ve muon nhung giu phong sach. Thich the thao.",
-    interests: ["Bong ro", "The thao", "Phim", "Am nhac"],
-    matchScore: 75, commonInterests: ["Am nhac"],
+    occupation: "Đi làm", workplace: "Thanh Xuân Office",
+    district: "Thanh Xuân", budgetMin: 3000000, budgetMax: 5500000,
+    sleepSchedule: "Linh hoạt", cookingHabit: "Đôi khi nấu",
+    smoking: false, pets: false, personality: "Trung tính",
+    bio: "Marketing executive, về muộn nhưng giữ phòng sạch. Thích thể thao.",
+    interests: ["Bóng rổ", "Thể thao", "Phim", "Âm nhạc"],
+    matchScore: 75, commonInterests: ["Âm nhạc"],
     moveInDate: "2026-11-15", status: "pending",
   },
 ];
@@ -120,10 +120,10 @@ export default function RoommateMatchesPage() {
       <div className="bg-white dark:bg-neutral-800 border-b border-neutral-100 dark:border-neutral-700 py-8">
         <div className="container mx-auto px-6">
           <h1 className="text-3xl font-black text-neutral-900 dark:text-white mb-1">
-            Tim nguoi ghep o
+            Tìm người ghép ở
           </h1>
           <p className="text-neutral-500 dark:text-neutral-400 mb-6">
-            {filtered.length} nguoi phu hop voi ban hom nay · Find Your Roommate
+            {filtered.length} người phù hợp với bạn hôm nay · Find Your Roommate
           </p>
 
           {/* Search & Filter */}
@@ -132,7 +132,7 @@ export default function RoommateMatchesPage() {
               <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-400" />
               <input
                 type="text"
-                placeholder="Tim theo ten, quan, so thich..."
+                placeholder="Tìm theo tên, quận, sở thích..."
                 value={searchQ}
                 onChange={(e) => setSearchQ(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 rounded-xl border border-neutral-200 dark:border-neutral-600 bg-neutral-50 dark:bg-neutral-700 text-neutral-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-400"
@@ -143,7 +143,7 @@ export default function RoommateMatchesPage() {
               onChange={(e) => setFilterDistrict(e.target.value)}
               className="px-4 py-3 rounded-xl border border-neutral-200 dark:border-neutral-600 bg-white dark:bg-neutral-700 text-neutral-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-400"
             >
-              <option value="all">Tat ca quan</option>
+              <option value="all">Tất cả quận</option>
               {districts.map(d => <option key={d} value={d}>{d}</option>)}
             </select>
           </div>
@@ -197,18 +197,18 @@ export default function RoommateMatchesPage() {
                   </div>
                   <div className="flex items-center gap-1.5 text-neutral-500">
                     <span>{profile.smoking ? "🚬" : "🚭"}</span>
-                    <span>{profile.smoking ? "Co hut thuoc" : "Khong hut"}</span>
+                    <span>{profile.smoking ? "Có hút thuốc" : "Không hút"}</span>
                   </div>
                   <div className="flex items-center gap-1.5 text-neutral-500">
                     <span>🐾</span>
-                    <span>{profile.pets ? "Co nuoi thu" : "Khong nuoi"}</span>
+                    <span>{profile.pets ? "Có nuôi thú" : "Không nuôi"}</span>
                   </div>
                 </div>
 
                 {/* Common interests */}
                 {profile.commonInterests.length > 0 && (
                   <div className="mb-4">
-                    <p className="text-xs text-neutral-400 mb-1.5">So thich chung:</p>
+                    <p className="text-xs text-neutral-400 mb-1.5">Sở thích chung:</p>
                     <div className="flex flex-wrap gap-1.5">
                       {profile.commonInterests.map((i) => (
                         <span key={i} className="bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-xs px-2 py-0.5 rounded-full">{i}</span>
@@ -224,10 +224,10 @@ export default function RoommateMatchesPage() {
                     className="flex-1 flex items-center justify-center gap-1.5 py-2.5 bg-primary-500 hover:bg-primary-600 text-white text-sm font-semibold rounded-xl transition-colors"
                   >
                     <ChatBubbleLeftIcon className="w-4 h-4" />
-                    Nhan tin
+                    Nhắn tin
                   </Link>
                   <button className="px-4 py-2.5 border border-neutral-200 dark:border-neutral-600 text-neutral-600 dark:text-neutral-300 text-sm rounded-xl hover:border-primary-300 hover:text-primary-600 transition-colors">
-                    Xem ho so
+                    Xem hồ sơ
                   </button>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export default function RoommateMatchesPage() {
 
         {filtered.length === 0 && (
           <div className="text-center py-20">
-            <p className="text-neutral-400 text-lg">Khong tim thay nguoi phu hop. Thu tim kiem khac.</p>
+            <p className="text-neutral-400 text-lg">Không tìm thấy người phù hợp. Thử tìm kiếm khác.</p>
           </div>
         )}
       </div>

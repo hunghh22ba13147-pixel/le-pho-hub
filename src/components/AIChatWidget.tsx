@@ -62,7 +62,7 @@ const MOCK_RULES: { pattern: RegExp; answer: string; listings?: { id: string; ti
   },
 ];
 
-const DEFAULT_ANSWER = "Xin loi, minh chua co thong tin ve van de nay. Ban co the thu hoi cac chu de: tim phong theo quan, gia ca, ghep o / roommate, goi dich vu, dang ky tai khoan, hoac lien he ho tro.";
+const DEFAULT_ANSWER = "Xin lỗi, mình chưa có thông tin về vấn đề này. Bạn có thể thử hỏi các chủ đề: tìm phòng theo quận, giá cả, ghép ở / roommate, gói dịch vụ, đăng ký tài khoản, hoặc liên hệ hỗ trợ.";
 
 function getSmartAnswer(q: string): { answer: string; listings?: { id: string; title: string; price: string; district: string }[] } {
   for (const rule of MOCK_RULES) {
