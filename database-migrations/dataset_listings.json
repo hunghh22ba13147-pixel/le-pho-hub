@@ -1,0 +1,682 @@
+[
+  {
+    "id": "78193727-18df-5953-8a2c-35c3e57c83ea",
+    "code": "LPH-001",
+    "title": "Studio full nội thất cao cấp tại Xã Đàn, Đống Đa",
+    "description": "Studio hiện đại khép kín, đầy đủ điều hòa, nóng lạnh, giường nệm, tủ áo, bếp riêng. Giờ giấc tự do, bảo vệ 24/7, thang máy tốc độ cao. Địa chỉ: Xã Đàn, Nam Đồng, Quận Đống Đa, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 4200000,
+    "area": 18.0,
+    "district": "Đống Đa",
+    "address": "Số 162, Xã Đàn, Nam Đồng, Quận Đống Đa, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "28a617db-9cae-53c7-ab0f-7462385ee88b",
+    "code": "LPH-002",
+    "title": "Phòng trọ khép kín ban công thoáng mát tại Chùa Lộc, Đống Đa",
+    "description": "Phòng rộng rãi có ban công đón nắng gió tự nhiên. Vệ sinh khép kín sạch sẽ, có sẵn máy giặt chung, wifi tốc độ cao, camera an ninh. Địa chỉ: Chùa Lộc, Láng Thượng, Quận Đống Đa, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 2800000,
+    "area": 25.0,
+    "district": "Đống Đa",
+    "address": "Số 112, Chùa Lộc, Láng Thượng, Quận Đống Đa, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "d6705afb-86eb-5925-ae2b-bb61aff60de6",
+    "code": "LPH-003",
+    "title": "Chung cư mini cao cấp có thang máy tại Tôn Đức Thắng, Đống Đa",
+    "description": "Căn hộ mini thiết kế thông minh, nội thất gỗ sang trọng. Khu dân trí cao, an ninh tuyệt đối, bãi đỗ xe rộng rãi, có khóa vân tay ra vào. Địa chỉ: Tôn Đức Thắng, Hàng Bột, Quận Đống Đa, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 4200000,
+    "area": 25.0,
+    "district": "Đống Đa",
+    "address": "Số 105, Tôn Đức Thắng, Hàng Bột, Quận Đống Đa, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "3f752233-40fa-5e24-ad59-1a1d5fc5e9b9",
+    "code": "LPH-004",
+    "title": "Phòng gác lửng xinh xắn view đẹp tại Thái Hà, Đống Đa",
+    "description": "Phòng có gác lửng ngủ riêng biệt, tối ưu không gian sinh hoạt. Phù hợp cho 1-2 người ở hoặc sinh viên, người đi làm. Không chung chủ. Địa chỉ: Thái Hà, Trung Liệt, Quận Đống Đa, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 4800000,
+    "area": 18.0,
+    "district": "Đống Đa",
+    "address": "Số 50, Thái Hà, Trung Liệt, Quận Đống Đa, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "f9080b55-bd71-5916-8389-894e3b26c014",
+    "code": "LPH-005",
+    "title": "Căn hộ 1 ngủ 1 khách riêng biệt tại Đặng Văn Ngữ, Đống Đa",
+    "description": "Thiết kế hiện đại chuẩn căn hộ dịch vụ: 1 phòng ngủ riêng, 1 phòng khách và bếp. Đầy đủ sofa, tivi, tủ lạnh, bếp từ. Thuận tiện đi lại. Địa chỉ: Đặng Văn Ngữ, Trung Tự, Quận Đống Đa, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 3600000,
+    "area": 28.0,
+    "district": "Đống Đa",
+    "address": "Số 79, Đặng Văn Ngữ, Trung Tự, Quận Đống Đa, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "887a25ce-c18c-5110-b08b-6400729f01a1",
+    "code": "LPH-006",
+    "title": "Studio full nội thất cao cấp tại Trần Thái Tông, Cầu Giấy",
+    "description": "Studio hiện đại khép kín, đầy đủ điều hòa, nóng lạnh, giường nệm, tủ áo, bếp riêng. Giờ giấc tự do, bảo vệ 24/7, thang máy tốc độ cao. Địa chỉ: Trần Thái Tông, Dịch Vọng, Quận Cầu Giấy, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 2800000,
+    "area": 28.0,
+    "district": "Cầu Giấy",
+    "address": "Số 179, Trần Thái Tông, Dịch Vọng, Quận Cầu Giấy, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "8ed55b0e-5f6e-545d-806a-5660880c5ed2",
+    "code": "LPH-007",
+    "title": "Phòng trọ khép kín ban công thoáng mát tại Xuân Thủy, Cầu Giấy",
+    "description": "Phòng rộng rãi có ban công đón nắng gió tự nhiên. Vệ sinh khép kín sạch sẽ, có sẵn máy giặt chung, wifi tốc độ cao, camera an ninh. Địa chỉ: Xuân Thủy, Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 3200000,
+    "area": 40.0,
+    "district": "Cầu Giấy",
+    "address": "Số 114, Xuân Thủy, Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "6bfd7a53-9bc5-5e25-98dc-4fd8763fd15c",
+    "code": "LPH-008",
+    "title": "Chung cư mini cao cấp có thang máy tại Duy Tân, Cầu Giấy",
+    "description": "Căn hộ mini thiết kế thông minh, nội thất gỗ sang trọng. Khu dân trí cao, an ninh tuyệt đối, bãi đỗ xe rộng rãi, có khóa vân tay ra vào. Địa chỉ: Duy Tân, Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 3200000,
+    "area": 22.5,
+    "district": "Cầu Giấy",
+    "address": "Số 91, Duy Tân, Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "c38c0b59-f57f-5a0e-a74f-d0c89cfe80ba",
+    "code": "LPH-009",
+    "title": "Phòng gác lửng xinh xắn view đẹp tại Nguyễn Phong Sắc, Cầu Giấy",
+    "description": "Phòng có gác lửng ngủ riêng biệt, tối ưu không gian sinh hoạt. Phù hợp cho 1-2 người ở hoặc sinh viên, người đi làm. Không chung chủ. Địa chỉ: Nguyễn Phong Sắc, Nghĩa Tân, Quận Cầu Giấy, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 2800000,
+    "area": 28.0,
+    "district": "Cầu Giấy",
+    "address": "Số 41, Nguyễn Phong Sắc, Nghĩa Tân, Quận Cầu Giấy, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "87d40951-12d2-58b3-9620-eb72a2378b8c",
+    "code": "LPH-010",
+    "title": "Căn hộ 1 ngủ 1 khách riêng biệt tại Trung Kính, Cầu Giấy",
+    "description": "Thiết kế hiện đại chuẩn căn hộ dịch vụ: 1 phòng ngủ riêng, 1 phòng khách và bếp. Đầy đủ sofa, tivi, tủ lạnh, bếp từ. Thuận tiện đi lại. Địa chỉ: Trung Kính, Yên Hòa, Quận Cầu Giấy, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 3600000,
+    "area": 28.0,
+    "district": "Cầu Giấy",
+    "address": "Số 124, Trung Kính, Yên Hòa, Quận Cầu Giấy, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "e6de6a66-155d-5ce3-be0f-34b15869b6e5",
+    "code": "LPH-011",
+    "title": "Studio full nội thất cao cấp tại Nguyễn Trãi, Thanh Xuân",
+    "description": "Studio hiện đại khép kín, đầy đủ điều hòa, nóng lạnh, giường nệm, tủ áo, bếp riêng. Giờ giấc tự do, bảo vệ 24/7, thang máy tốc độ cao. Địa chỉ: Nguyễn Trãi, Thanh Xuân Bắc, Quận Thanh Xuân, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 4200000,
+    "area": 32.0,
+    "district": "Thanh Xuân",
+    "address": "Số 122, Nguyễn Trãi, Thanh Xuân Bắc, Quận Thanh Xuân, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "e0444622-a591-557d-a435-323004f70bdb",
+    "code": "LPH-012",
+    "title": "Phòng trọ khép kín ban công thoáng mát tại Lê Văn Lương, Thanh Xuân",
+    "description": "Phòng rộng rãi có ban công đón nắng gió tự nhiên. Vệ sinh khép kín sạch sẽ, có sẵn máy giặt chung, wifi tốc độ cao, camera an ninh. Địa chỉ: Lê Văn Lương, Nhân Chính, Quận Thanh Xuân, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 3600000,
+    "area": 35.0,
+    "district": "Thanh Xuân",
+    "address": "Số 117, Lê Văn Lương, Nhân Chính, Quận Thanh Xuân, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "b0b8806e-fbb2-5cd7-b17f-4149102c7731",
+    "code": "LPH-013",
+    "title": "Chung cư mini cao cấp có thang máy tại Vũ Tông Phan, Thanh Xuân",
+    "description": "Căn hộ mini thiết kế thông minh, nội thất gỗ sang trọng. Khu dân trí cao, an ninh tuyệt đối, bãi đỗ xe rộng rãi, có khóa vân tay ra vào. Địa chỉ: Vũ Tông Phan, Khương Đình, Quận Thanh Xuân, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 4800000,
+    "area": 25.0,
+    "district": "Thanh Xuân",
+    "address": "Số 132, Vũ Tông Phan, Khương Đình, Quận Thanh Xuân, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "4cd95271-9088-5776-9404-c1354226e6ce",
+    "code": "LPH-014",
+    "title": "Phòng gác lửng xinh xắn view đẹp tại Nguyễn Tuân, Thanh Xuân",
+    "description": "Phòng có gác lửng ngủ riêng biệt, tối ưu không gian sinh hoạt. Phù hợp cho 1-2 người ở hoặc sinh viên, người đi làm. Không chung chủ. Địa chỉ: Nguyễn Tuân, Thanh Xuân Trung, Quận Thanh Xuân, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 3200000,
+    "area": 18.0,
+    "district": "Thanh Xuân",
+    "address": "Số 91, Nguyễn Tuân, Thanh Xuân Trung, Quận Thanh Xuân, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "c9b2b562-cc3e-57f0-b9ff-a0a5bf1453df",
+    "code": "LPH-015",
+    "title": "Căn hộ 1 ngủ 1 khách riêng biệt tại Khuất Duy Tiến, Thanh Xuân",
+    "description": "Thiết kế hiện đại chuẩn căn hộ dịch vụ: 1 phòng ngủ riêng, 1 phòng khách và bếp. Đầy đủ sofa, tivi, tủ lạnh, bếp từ. Thuận tiện đi lại. Địa chỉ: Khuất Duy Tiến, Thanh Xuân Bắc, Quận Thanh Xuân, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 2800000,
+    "area": 25.0,
+    "district": "Thanh Xuân",
+    "address": "Số 137, Khuất Duy Tiến, Thanh Xuân Bắc, Quận Thanh Xuân, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "d22b569f-2e49-5867-947a-1f6f002bd3f1",
+    "code": "LPH-016",
+    "title": "Studio full nội thất cao cấp tại Bạch Mai, Hai Bà Trưng",
+    "description": "Studio hiện đại khép kín, đầy đủ điều hòa, nóng lạnh, giường nệm, tủ áo, bếp riêng. Giờ giấc tự do, bảo vệ 24/7, thang máy tốc độ cao. Địa chỉ: Bạch Mai, Cầu Dền, Quận Hai Bà Trưng, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 5200000,
+    "area": 35.0,
+    "district": "Hai Bà Trưng",
+    "address": "Số 166, Bạch Mai, Cầu Dền, Quận Hai Bà Trưng, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "0c9392e5-4e38-5d4c-a8ca-abe134184a3c",
+    "code": "LPH-017",
+    "title": "Phòng trọ khép kín ban công thoáng mát tại Đại La, Hai Bà Trưng",
+    "description": "Phòng rộng rãi có ban công đón nắng gió tự nhiên. Vệ sinh khép kín sạch sẽ, có sẵn máy giặt chung, wifi tốc độ cao, camera an ninh. Địa chỉ: Đại La, Đồng Tâm, Quận Hai Bà Trưng, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 2800000,
+    "area": 22.5,
+    "district": "Hai Bà Trưng",
+    "address": "Số 102, Đại La, Đồng Tâm, Quận Hai Bà Trưng, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "a5f0d12b-707c-5d1f-8a71-5c4cb89da5fa",
+    "code": "LPH-018",
+    "title": "Chung cư mini cao cấp có thang máy tại Minh Khai, Hai Bà Trưng",
+    "description": "Căn hộ mini thiết kế thông minh, nội thất gỗ sang trọng. Khu dân trí cao, an ninh tuyệt đối, bãi đỗ xe rộng rãi, có khóa vân tay ra vào. Địa chỉ: Minh Khai, Vĩnh Tuy, Quận Hai Bà Trưng, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 4200000,
+    "area": 28.0,
+    "district": "Hai Bà Trưng",
+    "address": "Số 15, Minh Khai, Vĩnh Tuy, Quận Hai Bà Trưng, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "aa67c5f5-0174-5236-8306-d844d417816c",
+    "code": "LPH-019",
+    "title": "Phòng gác lửng xinh xắn view đẹp tại Tạ Quang Bửu, Hai Bà Trưng",
+    "description": "Phòng có gác lửng ngủ riêng biệt, tối ưu không gian sinh hoạt. Phù hợp cho 1-2 người ở hoặc sinh viên, người đi làm. Không chung chủ. Địa chỉ: Tạ Quang Bửu, Bách Khoa, Quận Hai Bà Trưng, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 2800000,
+    "area": 35.0,
+    "district": "Hai Bà Trưng",
+    "address": "Số 51, Tạ Quang Bửu, Bách Khoa, Quận Hai Bà Trưng, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "dd48eddd-22f0-5637-87c7-07e28c36af0e",
+    "code": "LPH-020",
+    "title": "Căn hộ 1 ngủ 1 khách riêng biệt tại Lò Đúc, Hai Bà Trưng",
+    "description": "Thiết kế hiện đại chuẩn căn hộ dịch vụ: 1 phòng ngủ riêng, 1 phòng khách và bếp. Đầy đủ sofa, tivi, tủ lạnh, bếp từ. Thuận tiện đi lại. Địa chỉ: Lò Đúc, Đống Mác, Quận Hai Bà Trưng, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 3200000,
+    "area": 40.0,
+    "district": "Hai Bà Trưng",
+    "address": "Số 159, Lò Đúc, Đống Mác, Quận Hai Bà Trưng, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "82d6ea71-ce59-50ac-bf8f-533b4cfe0780",
+    "code": "LPH-021",
+    "title": "Studio full nội thất cao cấp tại Đội Cấn, Ba Đình",
+    "description": "Studio hiện đại khép kín, đầy đủ điều hòa, nóng lạnh, giường nệm, tủ áo, bếp riêng. Giờ giấc tự do, bảo vệ 24/7, thang máy tốc độ cao. Địa chỉ: Đội Cấn, Đội Cấn, Quận Ba Đình, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 7000000,
+    "area": 22.5,
+    "district": "Ba Đình",
+    "address": "Số 125, Đội Cấn, Đội Cấn, Quận Ba Đình, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "45aa7a59-0886-58d4-8568-f2a18d5958f7",
+    "code": "LPH-022",
+    "title": "Phòng trọ khép kín ban công thoáng mát tại Kim Mã, Ba Đình",
+    "description": "Phòng rộng rãi có ban công đón nắng gió tự nhiên. Vệ sinh khép kín sạch sẽ, có sẵn máy giặt chung, wifi tốc độ cao, camera an ninh. Địa chỉ: Kim Mã, Kim Mã, Quận Ba Đình, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 6200000,
+    "area": 25.0,
+    "district": "Ba Đình",
+    "address": "Số 102, Kim Mã, Kim Mã, Quận Ba Đình, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "37770502-566b-584d-aa06-0a65976981d8",
+    "code": "LPH-023",
+    "title": "Chung cư mini cao cấp có thang máy tại Liễu Giai, Ba Đình",
+    "description": "Căn hộ mini thiết kế thông minh, nội thất gỗ sang trọng. Khu dân trí cao, an ninh tuyệt đối, bãi đỗ xe rộng rãi, có khóa vân tay ra vào. Địa chỉ: Liễu Giai, Liễu Giai, Quận Ba Đình, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 7000000,
+    "area": 35.0,
+    "district": "Ba Đình",
+    "address": "Số 68, Liễu Giai, Liễu Giai, Quận Ba Đình, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "88819360-0b15-5229-a9cc-01ac4a04a065",
+    "code": "LPH-024",
+    "title": "Phòng gác lửng xinh xắn view đẹp tại Hoàng Hoa Thám, Ba Đình",
+    "description": "Phòng có gác lửng ngủ riêng biệt, tối ưu không gian sinh hoạt. Phù hợp cho 1-2 người ở hoặc sinh viên, người đi làm. Không chung chủ. Địa chỉ: Hoàng Hoa Thám, Ngọc Hà, Quận Ba Đình, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 6200000,
+    "area": 35.0,
+    "district": "Ba Đình",
+    "address": "Số 56, Hoàng Hoa Thám, Ngọc Hà, Quận Ba Đình, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "854af8c4-65cb-5d5f-b403-984dcb0a77c1",
+    "code": "LPH-025",
+    "title": "Căn hộ 1 ngủ 1 khách riêng biệt tại Giảng Võ, Ba Đình",
+    "description": "Thiết kế hiện đại chuẩn căn hộ dịch vụ: 1 phòng ngủ riêng, 1 phòng khách và bếp. Đầy đủ sofa, tivi, tủ lạnh, bếp từ. Thuận tiện đi lại. Địa chỉ: Giảng Võ, Giảng Võ, Quận Ba Đình, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 6200000,
+    "area": 32.0,
+    "district": "Ba Đình",
+    "address": "Số 143, Giảng Võ, Giảng Võ, Quận Ba Đình, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "ab57560c-2aa9-5d17-a271-e58d1923b204",
+    "code": "LPH-026",
+    "title": "Studio full nội thất cao cấp tại Hàng Bông, Hoàn Kiếm",
+    "description": "Studio hiện đại khép kín, đầy đủ điều hòa, nóng lạnh, giường nệm, tủ áo, bếp riêng. Giờ giấc tự do, bảo vệ 24/7, thang máy tốc độ cao. Địa chỉ: Hàng Bông, Hàng Bông, Quận Hoàn Kiếm, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 4200000,
+    "area": 32.0,
+    "district": "Hoàn Kiếm",
+    "address": "Số 100, Hàng Bông, Hàng Bông, Quận Hoàn Kiếm, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "456a01c4-09f9-58ca-bd3b-8cd7bc9886c6",
+    "code": "LPH-027",
+    "title": "Phòng trọ khép kín ban công thoáng mát tại Phan Chu Trinh, Hoàn Kiếm",
+    "description": "Phòng rộng rãi có ban công đón nắng gió tự nhiên. Vệ sinh khép kín sạch sẽ, có sẵn máy giặt chung, wifi tốc độ cao, camera an ninh. Địa chỉ: Phan Chu Trinh, Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 6200000,
+    "area": 22.5,
+    "district": "Hoàn Kiếm",
+    "address": "Số 101, Phan Chu Trinh, Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "8e0be06f-24c9-5482-bf48-57f7d424c3a6",
+    "code": "LPH-028",
+    "title": "Chung cư mini cao cấp có thang máy tại Trần Hưng Đạo, Hoàn Kiếm",
+    "description": "Căn hộ mini thiết kế thông minh, nội thất gỗ sang trọng. Khu dân trí cao, an ninh tuyệt đối, bãi đỗ xe rộng rãi, có khóa vân tay ra vào. Địa chỉ: Trần Hưng Đạo, Cửa Nam, Quận Hoàn Kiếm, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 4800000,
+    "area": 35.0,
+    "district": "Hoàn Kiếm",
+    "address": "Số 55, Trần Hưng Đạo, Cửa Nam, Quận Hoàn Kiếm, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "a6dfc668-99aa-5240-9de1-f54883c3ddd9",
+    "code": "LPH-029",
+    "title": "Phòng gác lửng xinh xắn view đẹp tại Hàng Bạc, Hoàn Kiếm",
+    "description": "Phòng có gác lửng ngủ riêng biệt, tối ưu không gian sinh hoạt. Phù hợp cho 1-2 người ở hoặc sinh viên, người đi làm. Không chung chủ. Địa chỉ: Hàng Bạc, Hàng Bạc, Quận Hoàn Kiếm, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 4800000,
+    "area": 35.0,
+    "district": "Hoàn Kiếm",
+    "address": "Số 186, Hàng Bạc, Hàng Bạc, Quận Hoàn Kiếm, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "90e7a8bb-c65c-5200-a272-4f26a9a85aca",
+    "code": "LPH-030",
+    "title": "Căn hộ 1 ngủ 1 khách riêng biệt tại Hàng Bông, Hoàn Kiếm",
+    "description": "Thiết kế hiện đại chuẩn căn hộ dịch vụ: 1 phòng ngủ riêng, 1 phòng khách và bếp. Đầy đủ sofa, tivi, tủ lạnh, bếp từ. Thuận tiện đi lại. Địa chỉ: Hàng Bông, Hàng Bông, Quận Hoàn Kiếm, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 5500000,
+    "area": 32.0,
+    "district": "Hoàn Kiếm",
+    "address": "Số 178, Hàng Bông, Hàng Bông, Quận Hoàn Kiếm, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "15c67718-a757-5374-bb02-d2eae2b548f1",
+    "code": "LPH-031",
+    "title": "Studio full nội thất cao cấp tại Xuân Diệu, Tây Hồ",
+    "description": "Studio hiện đại khép kín, đầy đủ điều hòa, nóng lạnh, giường nệm, tủ áo, bếp riêng. Giờ giấc tự do, bảo vệ 24/7, thang máy tốc độ cao. Địa chỉ: Xuân Diệu, Quảng An, Quận Tây Hồ, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 5500000,
+    "area": 40.0,
+    "district": "Tây Hồ",
+    "address": "Số 188, Xuân Diệu, Quảng An, Quận Tây Hồ, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "bb5b0055-a019-5ccf-9371-8089fb6e54af",
+    "code": "LPH-032",
+    "title": "Phòng trọ khép kín ban công thoáng mát tại Lạc Long Quân, Tây Hồ",
+    "description": "Phòng rộng rãi có ban công đón nắng gió tự nhiên. Vệ sinh khép kín sạch sẽ, có sẵn máy giặt chung, wifi tốc độ cao, camera an ninh. Địa chỉ: Lạc Long Quân, Xuân La, Quận Tây Hồ, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 6200000,
+    "area": 18.0,
+    "district": "Tây Hồ",
+    "address": "Số 34, Lạc Long Quân, Xuân La, Quận Tây Hồ, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "dbcd8add-6ac6-503f-b920-27ab80545dcd",
+    "code": "LPH-033",
+    "title": "Chung cư mini cao cấp có thang máy tại Võ Chí Công, Tây Hồ",
+    "description": "Căn hộ mini thiết kế thông minh, nội thất gỗ sang trọng. Khu dân trí cao, an ninh tuyệt đối, bãi đỗ xe rộng rãi, có khóa vân tay ra vào. Địa chỉ: Võ Chí Công, Xuân La, Quận Tây Hồ, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 7000000,
+    "area": 22.5,
+    "district": "Tây Hồ",
+    "address": "Số 26, Võ Chí Công, Xuân La, Quận Tây Hồ, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "ab347459-42f6-56c8-b6c7-41103d0e3144",
+    "code": "LPH-034",
+    "title": "Phòng gác lửng xinh xắn view đẹp tại Thụy Khuê, Tây Hồ",
+    "description": "Phòng có gác lửng ngủ riêng biệt, tối ưu không gian sinh hoạt. Phù hợp cho 1-2 người ở hoặc sinh viên, người đi làm. Không chung chủ. Địa chỉ: Thụy Khuê, Bưởi, Quận Tây Hồ, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 5500000,
+    "area": 40.0,
+    "district": "Tây Hồ",
+    "address": "Số 102, Thụy Khuê, Bưởi, Quận Tây Hồ, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "6df53f0f-b7ba-575c-ab28-cfdad5b0face",
+    "code": "LPH-035",
+    "title": "Căn hộ 1 ngủ 1 khách riêng biệt tại Yên Phụ, Tây Hồ",
+    "description": "Thiết kế hiện đại chuẩn căn hộ dịch vụ: 1 phòng ngủ riêng, 1 phòng khách và bếp. Đầy đủ sofa, tivi, tủ lạnh, bếp từ. Thuận tiện đi lại. Địa chỉ: Yên Phụ, Yên Phụ, Quận Tây Hồ, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 5500000,
+    "area": 18.0,
+    "district": "Tây Hồ",
+    "address": "Số 163, Yên Phụ, Yên Phụ, Quận Tây Hồ, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "06b5fda4-14cd-50ff-a796-1cb882b256d5",
+    "code": "LPH-036",
+    "title": "Studio full nội thất cao cấp tại Giải Phóng, Hoàng Mai",
+    "description": "Studio hiện đại khép kín, đầy đủ điều hòa, nóng lạnh, giường nệm, tủ áo, bếp riêng. Giờ giấc tự do, bảo vệ 24/7, thang máy tốc độ cao. Địa chỉ: Giải Phóng, Giáp Bát, Quận Hoàng Mai, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 4000000,
+    "area": 40.0,
+    "district": "Hoàng Mai",
+    "address": "Số 61, Giải Phóng, Giáp Bát, Quận Hoàng Mai, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "6515b4a9-d47c-58c2-8345-8bea6a92ca1e",
+    "code": "LPH-037",
+    "title": "Phòng trọ khép kín ban công thoáng mát tại Định Công, Hoàng Mai",
+    "description": "Phòng rộng rãi có ban công đón nắng gió tự nhiên. Vệ sinh khép kín sạch sẽ, có sẵn máy giặt chung, wifi tốc độ cao, camera an ninh. Địa chỉ: Định Công, Định Công, Quận Hoàng Mai, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 2600000,
+    "area": 18.0,
+    "district": "Hoàng Mai",
+    "address": "Số 25, Định Công, Định Công, Quận Hoàng Mai, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "4878e717-86f1-5177-acd4-bc3bcb0259a4",
+    "code": "LPH-038",
+    "title": "Chung cư mini cao cấp có thang máy tại Kim Đồng, Hoàng Mai",
+    "description": "Căn hộ mini thiết kế thông minh, nội thất gỗ sang trọng. Khu dân trí cao, an ninh tuyệt đối, bãi đỗ xe rộng rãi, có khóa vân tay ra vào. Địa chỉ: Kim Đồng, Giáp Bát, Quận Hoàng Mai, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 2600000,
+    "area": 40.0,
+    "district": "Hoàng Mai",
+    "address": "Số 30, Kim Đồng, Giáp Bát, Quận Hoàng Mai, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1540518614846-7ede433c4ef3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "a03b5f44-4c2b-5be9-9578-f47eca948d6a",
+    "code": "LPH-039",
+    "title": "Phòng gác lửng xinh xắn view đẹp tại Linh Đàm, Hoàng Mai",
+    "description": "Phòng có gác lửng ngủ riêng biệt, tối ưu không gian sinh hoạt. Phù hợp cho 1-2 người ở hoặc sinh viên, người đi làm. Không chung chủ. Địa chỉ: Linh Đàm, Hoàng Liệt, Quận Hoàng Mai, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 2600000,
+    "area": 35.0,
+    "district": "Hoàng Mai",
+    "address": "Số 90, Linh Đàm, Hoàng Liệt, Quận Hoàng Mai, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  },
+  {
+    "id": "f5c0aa59-83bd-5025-9417-ffee3f237ad8",
+    "code": "LPH-040",
+    "title": "Căn hộ 1 ngủ 1 khách riêng biệt tại Tam Trinh, Hoàng Mai",
+    "description": "Thiết kế hiện đại chuẩn căn hộ dịch vụ: 1 phòng ngủ riêng, 1 phòng khách và bếp. Đầy đủ sofa, tivi, tủ lạnh, bếp từ. Thuận tiện đi lại. Địa chỉ: Tam Trinh, Mai Động, Quận Hoàng Mai, Hà Nội. Điện nước giá nhà nước, thanh toán linh hoạt.",
+    "price": 2200000,
+    "area": 22.5,
+    "district": "Hoàng Mai",
+    "address": "Số 84, Tam Trinh, Mai Động, Quận Hoàng Mai, Hà Nội",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-15T08:00:00Z"
+  }
+]
