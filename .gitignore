@@ -48,3 +48,9 @@ next-env.d.ts
 
 # Python scripts tam thoi (da dung xong)
 convert_to_word.py
+
+# Presentation files / scripts (khong push len Git)
+*.docx
+*thuyet-trinh*
+*presentation*
+*script*
