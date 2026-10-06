@@ -93,6 +93,7 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
     const loadRooms = async () => {
       if (data) return;
       setLoading(true);
+      try {
         const rawQ = (searchParams?.get("q") || "").toLowerCase().trim();
         const districtParam = (searchParams?.get("district") || "").toLowerCase().trim();
         const priceParam = (searchParams?.get("price") || "").trim();
