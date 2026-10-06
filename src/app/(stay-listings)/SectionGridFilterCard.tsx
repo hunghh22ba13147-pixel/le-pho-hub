@@ -131,13 +131,25 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
           );
         }
 
-        // 5. Lọc theo quận
+        // Hàm chuẩn hóa chuỗi tiếng Việt (bỏ dấu và gạch ngang) để so sánh slug
+        const normalizeStr = (str: string) => {
+          return str
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/đ/g, "d")
+            .replace(/Đ/g, "d")
+            .replace(/[^a-zA-Z0-9]/g, "")
+            .toLowerCase();
+        };
+
+        // 5. Lọc theo quận (hỗ trợ cả "dong-da", "Đống Đa", "dong da")
         if (districtParam && districtParam !== "all") {
-          transformed = transformed.filter(
-            (r) =>
-              r.district?.toLowerCase().includes(districtParam) ||
-              r.address.toLowerCase().includes(districtParam)
-          );
+          const targetNorm = normalizeStr(districtParam);
+          transformed = transformed.filter((r) => {
+            const distNorm = normalizeStr(r.district || "");
+            const addrNorm = normalizeStr(r.address || "");
+            return distNorm.includes(targetNorm) || addrNorm.includes(targetNorm);
+          });
         }
 
         setRooms(transformed);
