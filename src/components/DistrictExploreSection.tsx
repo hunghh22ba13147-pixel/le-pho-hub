@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-// Danh sách quận nội thành + vùng ven Hà Nội
+// Danh sách 8 quận nội thành Hà Nội chuẩn với số lượng 5 phòng/quận (Tổng 40 phòng thực tế)
 const HANOI_DISTRICTS = [
   {
     id: "dong-da",
@@ -13,17 +13,17 @@ const HANOI_DISTRICTS = [
     description: "Trung tâm văn hóa, nhiều trường ĐH, giá phòng hợp lý",
     slug: "dong-da",
     image: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=800&q=80",
-    roomCount: 45,
+    roomCount: 5,
     type: "Nội thành",
   },
   {
     id: "cau-giay",
     name: "Cầu Giấy",
     nameVi: "Cầu Giấy",
-    description: "Khu vực sinh viên sôi động, gần ĐH Quốc Gia, ĐHBK",
+    description: "Khu vực sinh viên sôi động, gần ĐH Quốc Gia, Ngoại Thương",
     slug: "cau-giay",
     image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
-    roomCount: 62,
+    roomCount: 5,
     type: "Nội thành",
   },
   {
@@ -33,63 +33,63 @@ const HANOI_DISTRICTS = [
     description: "Nhiều văn phòng, khu dân cư hiện đại, giao thông thuận tiện",
     slug: "thanh-xuan",
     image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&q=80",
-    roomCount: 38,
-    type: "Vùng ven",
+    roomCount: 5,
+    type: "Nội thành",
   },
   {
     id: "hai-ba-trung",
     name: "Hai Bà Trưng",
     nameVi: "Hai Bà Trưng",
-    description: "Khu phố cũ, kiến trúc Pháp thuộc, gần hồ Hoàn Kiếm",
+    description: "Khu phố cổ kính, gần ĐH Bách Khoa, Kinh Tế Quốc Dân",
     slug: "hai-ba-trung",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-    roomCount: 29,
+    roomCount: 5,
     type: "Nội thành",
   },
   {
     id: "ba-dinh",
     name: "Ba Đình",
     nameVi: "Ba Đình",
-    description: "Trung tâm chính trị, phố cổ Hà Nội, nhiều di tích lịch sử",
+    description: "Trung tâm chính trị, phố cổ Hà Nội, khu dân trí cao",
     slug: "ba-dinh",
     image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
-    roomCount: 22,
+    roomCount: 5,
     type: "Nội thành",
   },
   {
-    id: "nam-tu-liem",
-    name: "Nam Từ Liêm",
-    nameVi: "Nam Từ Liêm",
-    description: "Khu đô thị mới, nhiều chung cư mini, giá tốt cho sinh viên",
-    slug: "nam-tu-liem",
+    id: "hoan-kiem",
+    name: "Hoàn Kiếm",
+    nameVi: "Hoàn Kiếm",
+    description: "Trung tâm thủ đô, phố đi bộ, dịch vụ tiện ích cao cấp",
+    slug: "hoan-kiem",
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
+    roomCount: 5,
+    type: "Nội thành",
+  },
+  {
+    id: "tay-ho",
+    name: "Tây Hồ",
+    nameVi: "Tây Hồ",
+    description: "Không gian thoáng mát ven hồ Tây, căn hộ dịch vụ cao cấp",
+    slug: "tay-ho",
     image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
-    roomCount: 55,
-    type: "Vùng ven",
+    roomCount: 5,
+    type: "Nội thành",
   },
   {
-    id: "bac-tu-liem",
-    name: "Bắc Từ Liêm",
-    nameVi: "Bắc Từ Liêm",
-    description: "Gần các khu công nghiệp, nhiều phòng trọ giá bình dân",
-    slug: "bac-tu-liem",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
-    roomCount: 41,
-    type: "Vùng ven",
-  },
-  {
-    id: "long-bien",
-    name: "Long Biên",
-    nameVi: "Long Biên",
-    description: "Khu vực mới phát triển, giao thông tốt, phòng rộng rãi",
-    slug: "long-bien",
+    id: "hoang-mai",
+    name: "Hoàng Mai",
+    nameVi: "Hoàng Mai",
+    description: "Khu vực đô thị mới, nhiều phòng trọ rộng rãi giá tốt",
+    slug: "hoang-mai",
     image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
-    roomCount: 33,
+    roomCount: 5,
     type: "Vùng ven",
   },
 ];
 
 const DistrictExploreSection = () => {
-  const [filter, setFilter] = React.useState<string>("all");
+  const [filter, setFilter] = useState<string>("all");
 
   const filtered =
     filter === "all"
@@ -132,7 +132,7 @@ const DistrictExploreSection = () => {
           {filtered.map((district) => (
             <Link
               key={district.id}
-              href={`/phong-tro-theo-quan/${district.slug}`}
+              href={`/phong-tro?district=${district.slug}`}
               className="group block"
             >
               <div className="bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
@@ -168,7 +168,7 @@ const DistrictExploreSection = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-primary-600 dark:text-primary-400 font-medium">
-                      {district.roomCount} listings
+                      {district.roomCount} phòng hiện có
                     </span>
                     <div className="text-primary-500 group-hover:translate-x-1 transition-transform">
                       →
@@ -182,10 +182,10 @@ const DistrictExploreSection = () => {
 
         <div className="text-center mt-10">
           <Link
-            href="/phong-tro-theo-quan"
+            href="/phong-tro"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors shadow-md"
           >
-            Xem tất cả quận / View All Districts
+            Xem tất cả 40 phòng trọ / View All Listings
             <span>→</span>
           </Link>
         </div>
