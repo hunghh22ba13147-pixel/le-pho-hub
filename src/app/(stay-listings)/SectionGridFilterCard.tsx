@@ -56,7 +56,7 @@ function transformRawListingToStayData(item: RawListing): StayDataType {
     id: item.id,
     author,
     date: "10/2026",
-    href: `/phong-tro-detail` as Route,
+    href: `/phong-tro-detail?id=${item.id}` as Route,
     title: item.title,
     description: item.description,
     featuredImage: gallery[0],

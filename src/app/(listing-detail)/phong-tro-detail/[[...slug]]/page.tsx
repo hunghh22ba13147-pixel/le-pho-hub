@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { FC, Fragment, useState, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
@@ -48,12 +48,14 @@ import {
   DatabaseRoomVideoReview,
 } from "@/lib/supabaseServices";
 import { buildTikTokPlayerIframeSrc, extractTikTokVideoId } from "@/utils/tiktokEmbed";
-import { StayDataType } from "@/data/types";
+import { StayDataType, AuthorType, TaxonomyType } from "@/data/types";
 import { useAuth } from "@/contexts/AuthContext";
 import StayDatesRangeInput from "../StayDatesRangeInput";
 import GuestsInput from "../GuestsInput";
 import SectionDateRange from "../../SectionDateRange";
 import { Route } from "next";
+import datasetListings from "@/data/dataset_listings.json";
+import { supabase } from "@/lib/supabaseClient";
 
 export interface ListingStayDetailPageProps {}
 
@@ -183,36 +185,147 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
           setRoomVideoReviews([]);
           return;
         }
+        let resolvedRoom: StayDataType | null = null;
+
+        // 1. Nếu có roomId, thử tìm qua fetchRoomById (bảng rooms cũ)
         if (roomId) {
-          const room = await fetchRoomById(roomId);
-          setRoomData(room);
-          if (room?.id) {
-            const names = await fetchRoomAmenities(String(room.id));
-            setAmenities(names);
-            
-            // Load feedbacks and nearby places
-            loadFeedbacks(String(room.id));
-            loadNearbyPlaces(String(room.id));
-            loadVideoReviews(String(room.id));
-          } else {
-            setRoomVideoReviews([]);
-          }
-        } else {
-          // Fallback: load the first available room
-          const rooms = await fetchRooms(1);
-          setRoomData(rooms[0] || null);
-          if (rooms[0]?.id) {
-            const names = await fetchRoomAmenities(String(rooms[0].id));
-            setAmenities(names);
-            
-            // Load feedbacks and nearby places
-            loadFeedbacks(String(rooms[0].id));
-            loadNearbyPlaces(String(rooms[0].id));
-            loadVideoReviews(String(rooms[0].id));
-          } else {
-            setRoomVideoReviews([]);
+          try {
+            resolvedRoom = await fetchRoomById(roomId);
+          } catch {}
+        }
+
+        // 2. Nếu không thấy, truy vấn bảng listings mới trên Supabase
+        if (!resolvedRoom && roomId) {
+          try {
+            const { data: dbItem } = await supabase
+              .from("listings")
+              .select("*")
+              .eq("id", roomId)
+              .single();
+
+            if (dbItem) {
+              const gallery = dbItem.images && dbItem.images.length > 0
+                ? dbItem.images
+                : ["https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"];
+
+              resolvedRoom = {
+                id: dbItem.id,
+                author: {
+                  id: "author_default",
+                  firstName: "Chủ",
+                  lastName: "Trọ",
+                  displayName: "Chủ Nhà Trọ",
+                  avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+                  count: 1,
+                  desc: "Chính chủ cho thuê",
+                  jobName: "Chủ trọ Le Phố Hub",
+                  href: "/author" as Route,
+                  starRating: 5,
+                },
+                date: "10/2026",
+                href: `/phong-tro-detail?id=${dbItem.id}` as Route,
+                title: dbItem.title,
+                description: dbItem.description,
+                featuredImage: gallery[0],
+                roomStatus: "available",
+                commentCount: 12,
+                viewCount: 156,
+                address: dbItem.address,
+                district: dbItem.district,
+                reviewStart: 4.9,
+                reviewCount: 18,
+                like: false,
+                galleryImgs: gallery,
+                price: new Intl.NumberFormat("vi-VN").format(dbItem.price) + "đ",
+                area: dbItem.area,
+                listingCategory: {
+                  id: dbItem.district,
+                  name: `Quận ${dbItem.district}`,
+                  href: `/phong-tro?district=${encodeURIComponent(dbItem.district)}` as Route,
+                  taxonomy: "category",
+                  listingType: "stay",
+                },
+                maxGuests: 2,
+                bedrooms: 1,
+                bathrooms: 1,
+                saleOff: "-10% hôm nay",
+                isAds: false,
+                map: { lat: 21.0285, lng: 105.8542 },
+              };
+            }
+          } catch {}
+        }
+
+        // 3. Nếu vẫn chưa thấy, tìm trong bộ dataset 40 phòng (dataset_listings.json)
+        if (!resolvedRoom) {
+          const rawFound = (datasetListings as any[]).find(
+            (item) => String(item.id) === String(roomId)
+          ) || (datasetListings as any[])[0];
+
+          if (rawFound) {
+            const gallery = rawFound.images && rawFound.images.length > 0
+              ? rawFound.images
+              : ["https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"];
+
+            resolvedRoom = {
+              id: rawFound.id,
+              author: {
+                id: "author_default",
+                firstName: "Chủ",
+                lastName: "Trọ",
+                displayName: "Chủ Nhà Trọ",
+                avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+                count: 1,
+                desc: "Chính chủ cho thuê",
+                jobName: "Chủ trọ Le Phố Hub",
+                href: "/author" as Route,
+                starRating: 5,
+              },
+              date: "10/2026",
+              href: `/phong-tro-detail?id=${rawFound.id}` as Route,
+              title: rawFound.title,
+              description: rawFound.description,
+              featuredImage: gallery[0],
+              roomStatus: "available",
+              commentCount: 12,
+              viewCount: 156,
+              address: rawFound.address,
+              district: rawFound.district,
+              reviewStart: 4.9,
+              reviewCount: 18,
+              like: false,
+              galleryImgs: gallery,
+              price: new Intl.NumberFormat("vi-VN").format(rawFound.price) + "đ",
+              area: rawFound.area,
+              listingCategory: {
+                id: rawFound.district,
+                name: `Quận ${rawFound.district}`,
+                href: `/phong-tro?district=${encodeURIComponent(rawFound.district)}` as Route,
+                taxonomy: "category",
+                listingType: "stay",
+              },
+              maxGuests: 2,
+              bedrooms: 1,
+              bathrooms: 1,
+              saleOff: "-10% hôm nay",
+              isAds: false,
+              map: { lat: 21.0285, lng: 105.8542 },
+            };
           }
         }
+
+        setRoomData(resolvedRoom);
+        setAmenities([
+          "Wifi tốc độ cao",
+          "Điều hòa 2 chiều",
+          "Bình nóng lạnh",
+          "Máy giặt riêng",
+          "Tủ lạnh",
+          "Bếp nấu ăn",
+          "Chỗ để xe miễn phí",
+          "Camera an ninh 24/7",
+          "Giờ giấc tự do"
+        ]);
       } catch (error) {
         console.error('Error loading room:', error);
       } finally {
