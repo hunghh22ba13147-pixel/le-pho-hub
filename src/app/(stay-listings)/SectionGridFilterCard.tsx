@@ -93,9 +93,13 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
     const loadRooms = async () => {
       if (data) return;
       setLoading(true);
-      try {
-        const q = (searchParams?.get("q") || "").toLowerCase().trim();
+        const rawQ = (searchParams?.get("q") || "").toLowerCase().trim();
         const districtParam = (searchParams?.get("district") || "").toLowerCase().trim();
+        const priceParam = (searchParams?.get("price") || "").trim();
+        const areaParam = (searchParams?.get("area") || "").trim();
+
+        // Nếu q trùng với district (do form Hero gửi cả 2) thì bỏ q để tránh lọc quá chặt
+        const q = rawQ === districtParam ? "" : rawQ;
 
         // 1. Thử lấy danh sách phòng trực tiếp từ Supabase (bảng listings mới tạo)
         let rawItems: RawListing[] = [];
@@ -121,16 +125,6 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
         // 3. Chuyển đổi sang StayDataType
         let transformed = rawItems.map(transformRawListingToStayData);
 
-        // 4. Lọc theo từ khóa tìm kiếm
-        if (q) {
-          transformed = transformed.filter(
-            (r) =>
-              r.title.toLowerCase().includes(q) ||
-              r.address.toLowerCase().includes(q) ||
-              (r.description && r.description.toLowerCase().includes(q))
-          );
-        }
-
         // Hàm chuẩn hóa chuỗi tiếng Việt (bỏ dấu và gạch ngang) để so sánh slug
         const normalizeStr = (str: string) => {
           return str
@@ -142,7 +136,17 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
             .toLowerCase();
         };
 
-        // 5. Lọc theo quận (hỗ trợ cả "dong-da", "Đống Đa", "dong da")
+        // 4. Lọc theo từ khóa tìm kiếm (nếu có)
+        if (q) {
+          const qNorm = normalizeStr(q);
+          transformed = transformed.filter((r) => {
+            const titleNorm = normalizeStr(r.title);
+            const addrNorm = normalizeStr(r.address);
+            return titleNorm.includes(qNorm) || addrNorm.includes(qNorm);
+          });
+        }
+
+        // 5. Lọc theo quận (hỗ trợ cả "dong-da", "Dong Da", "Đống Đa")
         if (districtParam && districtParam !== "all") {
           const targetNorm = normalizeStr(districtParam);
           transformed = transformed.filter((r) => {
@@ -150,6 +154,46 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
             const addrNorm = normalizeStr(r.address || "");
             return distNorm.includes(targetNorm) || addrNorm.includes(targetNorm);
           });
+        }
+
+        // 6. Lọc theo khoảng giá (price: 0-2, 2-3, 3-4, 4-6, 6+)
+        if (priceParam) {
+          if (priceParam === "0-2") {
+            transformed = transformed.filter((r) => r.price && (rawItems.find(x => x.id === r.id)?.price || 0) <= 2000000);
+          } else if (priceParam === "2-3") {
+            transformed = transformed.filter((r) => {
+              const p = rawItems.find(x => x.id === r.id)?.price || 0;
+              return p >= 2000000 && p <= 3000000;
+            });
+          } else if (priceParam === "3-4") {
+            transformed = transformed.filter((r) => {
+              const p = rawItems.find(x => x.id === r.id)?.price || 0;
+              return p >= 3000000 && p <= 4000000;
+            });
+          } else if (priceParam === "4-6") {
+            transformed = transformed.filter((r) => {
+              const p = rawItems.find(x => x.id === r.id)?.price || 0;
+              return p >= 4000000 && p <= 6000000;
+            });
+          } else if (priceParam === "6+") {
+            transformed = transformed.filter((r) => {
+              const p = rawItems.find(x => x.id === r.id)?.price || 0;
+              return p >= 6000000;
+            });
+          }
+        }
+
+        // 7. Lọc theo diện tích (area: 0-20, 20-30, 30-50, 50+)
+        if (areaParam) {
+          if (areaParam === "0-20") {
+            transformed = transformed.filter((r) => (r.area || 0) <= 20);
+          } else if (areaParam === "20-30") {
+            transformed = transformed.filter((r) => (r.area || 0) >= 20 && (r.area || 0) <= 30);
+          } else if (areaParam === "30-50") {
+            transformed = transformed.filter((r) => (r.area || 0) >= 30 && (r.area || 0) <= 50);
+          } else if (areaParam === "50+") {
+            transformed = transformed.filter((r) => (r.area || 0) >= 50);
+          }
         }
 
         setRooms(transformed);
